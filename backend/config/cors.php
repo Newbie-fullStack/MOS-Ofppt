@@ -6,12 +6,9 @@ return [
     'allowed_methods' => ['*'],
 
     // IMPORTANT: cannot be "*" when supports_credentials = true
-    'allowed_origins' => [
-        'http://localhost:5173',
-        'http://127.0.0.1:5173',
-        'http://localhost:5175',
-        'http://127.0.0.1:5175',
-    ],
+    'allowed_origins' => explode(',', env('CORS_ALLOWED_ORIGINS',
+        'http://localhost:5173,http://127.0.0.1:5173,http://localhost:5175,http://127.0.0.1:5175'
+    )),
 
     'allowed_origins_patterns' => [],
 

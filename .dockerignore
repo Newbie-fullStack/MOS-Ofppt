@@ -1,0 +1,30 @@
+# ── Git ──────────────────────────────────────────────────
+.git
+.gitignore
+
+# ── Local config ────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Docker ──────────────────────────────────────────────
+docker-compose.yml
+
+# ── OS ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+
+# ── IDE ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Temp / generated ───────────────────────────────────
+fichier a utilise/
+Rapport_*.docx
+Rapport_*.pdf
+diagramme de class.png
+mos_use_case_diagram.svg
+page de garde.png
