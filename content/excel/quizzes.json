@@ -1,0 +1,852 @@
+[
+  {
+    "id": "excel-q-001",
+    "appModule": "EXCEL",
+    "domain": "formules_base",
+    "difficulty": 1,
+    "questionText": "Quelle formule permet de calculer la somme des cellules A1 à A10 ?",
+    "options": [
+      "=TOTAL(A1:A10)",
+      "=SOMME(A1:A10)",
+      "=ADDITION(A1,A10)",
+      "=CALCULER(A1:A10)"
+    ],
+    "correctIndex": 1,
+    "explanation": "=SOMME(A1:A10) est la fonction de base pour additionner une plage de cellules. Le raccourci Alt+= insère automatiquement une SOMME sur la plage détectée au-dessus ou à gauche.",
+    "mosObjective": "4.1.1",
+    "lessonRef": "excel-01"
+  },
+  {
+    "id": "excel-q-002",
+    "appModule": "EXCEL",
+    "domain": "formules_base",
+    "difficulty": 1,
+    "questionText": "Comment fixer une référence de cellule pour qu'elle ne change pas lors de la copie d'une formule ?",
+    "options": [
+      "Mettre le nom de la cellule entre guillemets",
+      "Ajouter le signe $ devant la colonne et/ou la ligne (ex: $A$1)",
+      "Mettre la cellule en gras",
+      "Utiliser la touche F4 après avoir tapé la référence"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le signe $ fixe la référence. $A$1 fixe colonne ET ligne, $A1 fixe seulement la colonne, A$1 fixe seulement la ligne. La touche F4 (option D) fait aussi le cycle des types de référence automatiquement.",
+    "mosObjective": "4.1.2",
+    "lessonRef": "excel-01"
+  },
+  {
+    "id": "excel-q-003",
+    "appModule": "EXCEL",
+    "domain": "formules_base",
+    "difficulty": 1,
+    "questionText": "Quelle fonction Excel calcule la moyenne d'une plage de cellules ?",
+    "options": [
+      "=MOYENNE(A1:A10)",
+      "=MOYEN(A1:A10)",
+      "=AVG(A1:A10)",
+      "=CALCMOY(A1:A10)"
+    ],
+    "correctIndex": 0,
+    "explanation": "=MOYENNE(plage) calcule la moyenne arithmétique. AVG est l'équivalent anglais. Pour la version française d'Excel, c'est toujours MOYENNE.",
+    "mosObjective": "4.1.3",
+    "lessonRef": "excel-01"
+  },
+  {
+    "id": "excel-q-004",
+    "appModule": "EXCEL",
+    "domain": "formules_conditionnelles",
+    "difficulty": 2,
+    "questionText": "Quelle formule affiche 'Reçu' si la valeur de B2 est supérieure ou égale à 10, sinon 'Refusé' ?",
+    "options": [
+      "=SI(B2=>10;\"Reçu\";\"Refusé\")",
+      "=SI(B2>=10;\"Reçu\";\"Refusé\")",
+      "=IF(B2>=10,\"Reçu\",\"Refusé\")",
+      "=CONDITION(B2>=10;\"Reçu\";\"Refusé\")"
+    ],
+    "correctIndex": 1,
+    "explanation": "=SI(test_logique; valeur_si_vrai; valeur_si_faux). Le signe >= signifie 'supérieur ou égal'. En français, le séparateur d'arguments est le point-virgule (;) et non la virgule.",
+    "mosObjective": "4.2.1",
+    "lessonRef": "excel-02"
+  },
+  {
+    "id": "excel-q-005",
+    "appModule": "EXCEL",
+    "domain": "formules_conditionnelles",
+    "difficulty": 2,
+    "questionText": "Comment compter le nombre de cellules contenant la valeur 'Paris' dans la plage A1:A100 ?",
+    "options": [
+      "=COMPTE(A1:A100;\"Paris\")",
+      "=NB.SI(A1:A100;\"Paris\")",
+      "=COMPTER(A1:A100;\"Paris\")",
+      "=SI.COMPTE(A1:A100;\"Paris\")"
+    ],
+    "correctIndex": 1,
+    "explanation": "=NB.SI(plage; critère) compte les cellules qui correspondent au critère. Pour sommer avec condition : SOMME.SI. Pour moyenne avec condition : MOYENNE.SI.",
+    "mosObjective": "4.2.2",
+    "lessonRef": "excel-02"
+  },
+  {
+    "id": "excel-q-006",
+    "appModule": "EXCEL",
+    "domain": "formules_conditionnelles",
+    "difficulty": 3,
+    "questionText": "Quelle formule additionne les valeurs de C1:C100 uniquement si la cellule correspondante en A est 'Maroc' ET si B est supérieur à 100 ?",
+    "options": [
+      "=SOMME.SI(A1:A100;\"Maroc\";C1:C100)+SOMME.SI(B1:B100;\">100\";C1:C100)",
+      "=SOMME.SI.ENS(C1:C100;A1:A100;\"Maroc\";B1:B100;\">100\")",
+      "=SI(A1:A100=\"Maroc\";SI(B1:B100>100;SOMME(C1:C100)))",
+      "=SOMME(SI(A1:A100=\"Maroc\";SI(B1:B100>100;C1:C100)))"
+    ],
+    "correctIndex": 1,
+    "explanation": "=SOMME.SI.ENS(plage_somme; plage_critère1; critère1; plage_critère2; critère2...) permet plusieurs conditions. La plage à sommer est en premier argument, contrairement à SOMME.SI.",
+    "mosObjective": "4.2.3",
+    "lessonRef": "excel-02"
+  },
+  {
+    "id": "excel-q-007",
+    "appModule": "EXCEL",
+    "domain": "recherche",
+    "difficulty": 2,
+    "questionText": "Quelle fonction cherche une valeur dans la première colonne d'un tableau et retourne une valeur de la même ligne ?",
+    "options": [
+      "=CHERCHER(valeur; tableau; colonne)",
+      "=RECHERCHEV(valeur; tableau; n°_colonne; FAUX)",
+      "=INDEX(tableau; ligne; colonne)",
+      "=TROUVE(valeur; tableau)"
+    ],
+    "correctIndex": 1,
+    "explanation": "RECHERCHEV (V = Vertical) cherche dans la 1ère colonne et retourne une valeur d'une colonne adjacente. Le 4ème argument FAUX/0 impose une correspondance exacte. VRAI/1 permet une correspondance approximative.",
+    "mosObjective": "4.3.1",
+    "lessonRef": "excel-03"
+  },
+  {
+    "id": "excel-q-008",
+    "appModule": "EXCEL",
+    "domain": "recherche",
+    "difficulty": 3,
+    "questionText": "Quelle combinaison de fonctions est plus flexible que RECHERCHEV et permet de chercher dans n'importe quelle colonne ?",
+    "options": [
+      "SOMME + SI",
+      "INDEX + EQUIV",
+      "RECHERCHEH + RECHERCHEV",
+      "DECALER + NB"
+    ],
+    "correctIndex": 1,
+    "explanation": "=INDEX(plage_résultat; EQUIV(valeur_cherchée; plage_recherche; 0)) est plus puissant que RECHERCHEV : il peut chercher à gauche, n'est pas limité à la première colonne, et est plus rapide sur les grands tableaux.",
+    "mosObjective": "4.3.2",
+    "lessonRef": "excel-03"
+  },
+  {
+    "id": "excel-q-009",
+    "appModule": "EXCEL",
+    "domain": "mise_en_forme",
+    "difficulty": 1,
+    "questionText": "Comment formater une cellule pour afficher les nombres avec 2 décimales et le séparateur des milliers ?",
+    "options": [
+      "Taper manuellement les virgules et points dans chaque cellule",
+      "Sélectionner la cellule > Ctrl+1 > Nombre > définir le format",
+      "Onglet Accueil > groupe Nombre > Format Nombre Comptabilité",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ctrl+1 ouvre la boîte Format de cellule où on peut personnaliser précisément le format. Le bouton Comptabilité (onglet Accueil) applique rapidement un format monétaire avec 2 décimales et séparateur.",
+    "mosObjective": "2.2.1",
+    "lessonRef": "excel-04"
+  },
+  {
+    "id": "excel-q-010",
+    "appModule": "EXCEL",
+    "domain": "mise_en_forme_conditionnelle",
+    "difficulty": 2,
+    "questionText": "Comment mettre automatiquement en surbrillance rouge les cellules dont la valeur est inférieure à 0 ?",
+    "options": [
+      "Sélectionner manuellement les cellules négatives et appliquer la couleur",
+      "Onglet Accueil > Mise en forme conditionnelle > Règles de mise en surbrillance > Inférieur à",
+      "Onglet Données > Filtre > Valeurs négatives",
+      "Écrire une formule SI avec mise en forme"
+    ],
+    "correctIndex": 1,
+    "explanation": "La mise en forme conditionnelle (MFC) applique automatiquement une mise en forme selon des règles. Accueil > Mise en forme conditionnelle > Règles de mise en surbrillance > Inférieur à > entrer 0 > choisir la couleur rouge.",
+    "mosObjective": "2.3.1",
+    "lessonRef": "excel-05"
+  },
+  {
+    "id": "excel-q-011",
+    "appModule": "EXCEL",
+    "domain": "mise_en_forme_conditionnelle",
+    "difficulty": 2,
+    "questionText": "Comment appliquer des barres de données colorées pour visualiser les valeurs d'une plage comme un mini graphique ?",
+    "options": [
+      "Insérer un graphique en barres dans chaque cellule",
+      "Onglet Accueil > Mise en forme conditionnelle > Barres de données",
+      "Onglet Insertion > Sparklines > Colonnes",
+      "Ce n'est pas possible dans Excel"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mise en forme conditionnelle > Barres de données remplit chaque cellule avec une barre proportionnelle à sa valeur. Les Sparklines (option C) sont de mini-graphiques dans une cellule — les deux existent et sont différents.",
+    "mosObjective": "2.3.2",
+    "lessonRef": "excel-05"
+  },
+  {
+    "id": "excel-q-012",
+    "appModule": "EXCEL",
+    "domain": "tableaux",
+    "difficulty": 1,
+    "questionText": "Quel raccourci clavier permet de convertir une plage de données en tableau Excel structuré ?",
+    "options": [
+      "Ctrl+T",
+      "Ctrl+L",
+      "Ctrl+Maj+T",
+      "Les options A et B sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ctrl+T et Ctrl+L convertissent tous les deux une plage en tableau structuré (aussi accessible via Insertion > Tableau). Les tableaux structurés facilitent le tri, le filtrage et les formules avec références structurées.",
+    "mosObjective": "3.1.1",
+    "lessonRef": "excel-06"
+  },
+  {
+    "id": "excel-q-013",
+    "appModule": "EXCEL",
+    "domain": "tableaux",
+    "difficulty": 2,
+    "questionText": "Comment ajouter une ligne de totaux à un tableau structuré Excel ?",
+    "options": [
+      "Ajouter une ligne manuellement sous le tableau avec SOMME",
+      "Onglet Création du tableau > cocher Ligne des totaux",
+      "Clic droit sur le tableau > Totaux",
+      "Onglet Accueil > Insérer > Ligne de totaux"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'onglet contextuel Création (qui apparaît quand on clique dans un tableau) contient l'option 'Ligne des totaux'. Elle ajoute une ligne avec des menus déroulants pour choisir SOMME, MOYENNE, NB, etc.",
+    "mosObjective": "3.1.2",
+    "lessonRef": "excel-06"
+  },
+  {
+    "id": "excel-q-014",
+    "appModule": "EXCEL",
+    "domain": "tri_filtre",
+    "difficulty": 1,
+    "questionText": "Comment activer les filtres automatiques sur les colonnes d'une plage de données ?",
+    "options": [
+      "Clic droit sur les en-têtes > Filtrer",
+      "Onglet Données > Filtrer (ou Ctrl+Maj+L)",
+      "Onglet Accueil > Trier et filtrer > Filtrer",
+      "Les options A, B et C sont toutes correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Les filtres automatiques peuvent être activés de plusieurs façons. Ctrl+Maj+L est le raccourci le plus rapide. Les flèches de filtre apparaissent alors sur chaque en-tête de colonne.",
+    "mosObjective": "3.2.1",
+    "lessonRef": "excel-07"
+  },
+  {
+    "id": "excel-q-015",
+    "appModule": "EXCEL",
+    "domain": "tri_filtre",
+    "difficulty": 2,
+    "questionText": "Comment trier un tableau Excel selon plusieurs colonnes (d'abord par ville, puis par nom) ?",
+    "options": [
+      "Trier d'abord par nom, puis par ville séparément",
+      "Onglet Données > Trier > Ajouter un niveau de tri",
+      "Ctrl+Maj+S > Tri multiple",
+      "Ce n'est possible qu'avec les tableaux structurés"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Données > Trier ouvre une boîte de dialogue où on peut ajouter plusieurs niveaux de tri. Le premier niveau a la priorité. On peut aussi déplacer les niveaux avec les flèches Haut/Bas.",
+    "mosObjective": "3.2.2",
+    "lessonRef": "excel-07"
+  },
+  {
+    "id": "excel-q-016",
+    "appModule": "EXCEL",
+    "domain": "tableaux_croises",
+    "difficulty": 2,
+    "questionText": "Comment créer un tableau croisé dynamique (TCD) à partir d'une plage de données ?",
+    "options": [
+      "Onglet Formules > Tableau croisé",
+      "Onglet Insertion > Tableau croisé dynamique",
+      "Onglet Données > Analyser > TCD",
+      "Clic droit sur le tableau > Résumer avec un TCD"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Insertion > Tableau croisé dynamique (ou TCD recommandé). Une boîte de dialogue demande la source de données et l'emplacement du TCD (nouvelle feuille ou feuille existante).",
+    "mosObjective": "5.1.1",
+    "lessonRef": "excel-08"
+  },
+  {
+    "id": "excel-q-017",
+    "appModule": "EXCEL",
+    "domain": "tableaux_croises",
+    "difficulty": 2,
+    "questionText": "Dans un tableau croisé dynamique, comment afficher les valeurs en pourcentage du total général ?",
+    "options": [
+      "Diviser manuellement chaque valeur par le total",
+      "Clic droit sur une valeur > Afficher les valeurs > % du total général",
+      "Onglet Analyse > Pourcentage",
+      "Modifier le format de nombre en pourcentage"
+    ],
+    "correctIndex": 1,
+    "explanation": "Un clic droit sur n'importe quelle valeur dans la zone Valeurs du TCD > Afficher les valeurs > % du total général convertit toutes les valeurs en pourcentages. Plusieurs modes sont disponibles (% par ligne, par colonne, etc.).",
+    "mosObjective": "5.1.2",
+    "lessonRef": "excel-08"
+  },
+  {
+    "id": "excel-q-018",
+    "appModule": "EXCEL",
+    "domain": "tableaux_croises",
+    "difficulty": 3,
+    "questionText": "Comment grouper les dates par mois dans un tableau croisé dynamique ?",
+    "options": [
+      "Créer une colonne 'Mois' dans les données source",
+      "Clic droit sur le champ date dans le TCD > Grouper > Mois",
+      "Onglet Analyse du TCD > Grouper la sélection",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le groupement de dates peut se faire via clic droit > Grouper, ou Onglet Analyse > Groupe > Grouper la sélection. On peut choisir de grouper par jours, mois, trimestres, années, ou plusieurs niveaux à la fois.",
+    "mosObjective": "5.1.3",
+    "lessonRef": "excel-08"
+  },
+  {
+    "id": "excel-q-019",
+    "appModule": "EXCEL",
+    "domain": "graphiques",
+    "difficulty": 1,
+    "questionText": "Comment créer rapidement un graphique à partir d'une plage de données sélectionnée ?",
+    "options": [
+      "Onglet Insertion > Graphiques recommandés ou choisir un type",
+      "Alt+F1 (graphique intégré) ou F11 (nouvelle feuille graphique)",
+      "Onglet Accueil > Insérer un graphique",
+      "Les options A et B sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Onglet Insertion > Graphiques est la méthode principale. Alt+F1 crée un graphique intégré instantanément, F11 crée un graphique dans une nouvelle feuille. Les graphiques recommandés suggèrent le meilleur type selon les données.",
+    "mosObjective": "5.2.1",
+    "lessonRef": "excel-09"
+  },
+  {
+    "id": "excel-q-020",
+    "appModule": "EXCEL",
+    "domain": "graphiques",
+    "difficulty": 2,
+    "questionText": "Comment ajouter des étiquettes de données sur un graphique Excel ?",
+    "options": [
+      "Taper les valeurs manuellement comme zones de texte",
+      "Clic droit sur la série de données > Ajouter des étiquettes de données",
+      "Onglet Création du graphique > Ajouter un élément > Étiquettes de données",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Les étiquettes de données s'ajoutent par clic droit sur la série, ou via l'onglet contextuel Création du graphique > Ajouter un élément de graphique > Étiquettes de données. On peut choisir leur position et contenu.",
+    "mosObjective": "5.2.2",
+    "lessonRef": "excel-09"
+  },
+  {
+    "id": "excel-q-021",
+    "appModule": "EXCEL",
+    "domain": "validation",
+    "difficulty": 2,
+    "questionText": "Comment créer une liste déroulante dans une cellule pour limiter les valeurs autorisées ?",
+    "options": [
+      "Onglet Accueil > Validation > Liste",
+      "Onglet Données > Validation des données > Liste",
+      "Clic droit sur la cellule > Format > Liste déroulante",
+      "Onglet Insertion > Liste déroulante"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Données > Outils de données > Validation des données > choisir 'Liste' comme critère de validation > entrer les éléments séparés par des point-virgules ou une plage de cellules.",
+    "mosObjective": "2.4.1",
+    "lessonRef": "excel-10"
+  },
+  {
+    "id": "excel-q-022",
+    "appModule": "EXCEL",
+    "domain": "validation",
+    "difficulty": 2,
+    "questionText": "Comment afficher un message d'erreur personnalisé quand un utilisateur entre une valeur invalide ?",
+    "options": [
+      "Utiliser une formule SI pour afficher un message",
+      "Onglet Données > Validation des données > onglet Alerte d'erreur",
+      "Onglet Révision > Protéger > Message d'erreur",
+      "Ce n'est pas possible dans Excel"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dans la boîte Validation des données, l'onglet 'Alerte d'erreur' permet de définir un titre, un message et un style (Arrêt, Avertissement, Informations) pour le message qui apparaît lors d'une saisie invalide.",
+    "mosObjective": "2.4.2",
+    "lessonRef": "excel-10"
+  },
+  {
+    "id": "excel-q-023",
+    "appModule": "EXCEL",
+    "domain": "protection",
+    "difficulty": 2,
+    "questionText": "Comment protéger une feuille Excel pour empêcher les modifications tout en permettant la lecture ?",
+    "options": [
+      "Fichier > Informations > Protéger",
+      "Onglet Révision > Protéger la feuille > définir un mot de passe",
+      "Clic droit sur l'onglet de la feuille > Protéger",
+      "Onglet Accueil > Protection > Verrouiller"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Révision > groupe Protéger > Protéger la feuille. On peut choisir les actions autorisées aux utilisateurs (sélectionner cellules verrouillées/déverrouillées, trier, filtrer, etc.) et définir un mot de passe.",
+    "mosObjective": "6.1.1",
+    "lessonRef": "excel-11"
+  },
+  {
+    "id": "excel-q-024",
+    "appModule": "EXCEL",
+    "domain": "protection",
+    "difficulty": 3,
+    "questionText": "Comment permettre la modification de certaines cellules seulement dans une feuille protégée ?",
+    "options": [
+      "Ce n'est pas possible — la protection s'applique à toute la feuille",
+      "Sélectionner les cellules à laisser libres > Format de cellule > Protection > décocher Verrouillée, puis protéger la feuille",
+      "Onglet Révision > Permettre la modification des plages",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Par défaut toutes les cellules sont verrouillées (propriété Verrouilée dans Format de cellule > Protection). Pour laisser certaines cellules libres : décocher Verrouillée sur ces cellules, puis protéger la feuille. L'option C permet aussi de définir des plages avec mots de passe séparés.",
+    "mosObjective": "6.1.2",
+    "lessonRef": "excel-11"
+  },
+  {
+    "id": "excel-q-025",
+    "appModule": "EXCEL",
+    "domain": "nommer_plages",
+    "difficulty": 2,
+    "questionText": "Comment nommer une plage de cellules dans Excel pour l'utiliser dans des formules ?",
+    "options": [
+      "Clic droit > Nommer la plage",
+      "Sélectionner la plage > cliquer dans la Zone Nom (en haut à gauche) > taper le nom > Entrée",
+      "Onglet Formules > Gestionnaire de noms > Nouveau",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "La Zone Nom (à gauche de la barre de formule) est la méthode la plus rapide pour nommer une plage. Le Gestionnaire de noms (Formules > Noms définis) permet de créer, modifier et supprimer tous les noms.",
+    "mosObjective": "4.4.1",
+    "lessonRef": "excel-12"
+  },
+  {
+    "id": "excel-q-026",
+    "appModule": "EXCEL",
+    "domain": "formules_texte",
+    "difficulty": 2,
+    "questionText": "Quelle formule concatène (assemble) le prénom en A1 et le nom en B1 avec un espace entre les deux ?",
+    "options": [
+      "=A1+\" \"+B1",
+      "=CONCATENER(A1;\" \";B1) ou =A1&\" \"&B1",
+      "=JOINDRE(A1;B1;\" \")",
+      "=TEXTE(A1;B1)"
+    ],
+    "correctIndex": 1,
+    "explanation": "=CONCATENER() ou l'opérateur & permettent d'assembler des textes. Dans Excel 365, =CONCAT() et =JOINDRE.TEXTE() sont des alternatives modernes. =A1&\" \"&B1 est la syntaxe la plus concise.",
+    "mosObjective": "4.5.1",
+    "lessonRef": "excel-13"
+  },
+  {
+    "id": "excel-q-027",
+    "appModule": "EXCEL",
+    "domain": "formules_texte",
+    "difficulty": 2,
+    "questionText": "Quelle fonction extrait les 5 premiers caractères d'une cellule texte ?",
+    "options": [
+      "=DEBUT(A1;5)",
+      "=GAUCHE(A1;5)",
+      "=EXTRAIRE(A1;1;5)",
+      "=TEXTE(A1;5)"
+    ],
+    "correctIndex": 1,
+    "explanation": "=GAUCHE(texte; nb_caractères) extrait depuis la gauche. =DROITE(texte; nb) extrait depuis la droite. =STXT(texte; position_début; nb) extrait depuis une position quelconque.",
+    "mosObjective": "4.5.2",
+    "lessonRef": "excel-13"
+  },
+  {
+    "id": "excel-q-028",
+    "appModule": "EXCEL",
+    "domain": "formules_date",
+    "difficulty": 2,
+    "questionText": "Quelle formule calcule le nombre de jours entre deux dates en A1 et B1 ?",
+    "options": [
+      "=DATEDIF(A1;B1)",
+      "=B1-A1 (en format Nombre)",
+      "=NB.JOURS(A1;B1)",
+      "=JOURS(B1;A1)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Les dates Excel sont des nombres (jours depuis le 1/1/1900), donc B1-A1 donne directement le nombre de jours si le résultat est formaté en Nombre. =JOURS(B1;A1) fonctionne aussi. =DATEDIF existe mais n'apparaît pas dans la liste des fonctions.",
+    "mosObjective": "4.6.1",
+    "lessonRef": "excel-14"
+  },
+  {
+    "id": "excel-q-029",
+    "appModule": "EXCEL",
+    "domain": "formules_date",
+    "difficulty": 2,
+    "questionText": "Quelle fonction retourne la date d'aujourd'hui (qui se met à jour automatiquement) ?",
+    "options": [
+      "=DATE()",
+      "=MAINTENANT()",
+      "=AUJOURD'HUI()",
+      "=JOUR.ACTUEL()"
+    ],
+    "correctIndex": 2,
+    "explanation": "=AUJOURD'HUI() retourne la date du jour (sans heure). =MAINTENANT() retourne date ET heure. Les deux se recalculent à chaque ouverture du classeur ou recalcul.",
+    "mosObjective": "4.6.2",
+    "lessonRef": "excel-14"
+  },
+  {
+    "id": "excel-q-030",
+    "appModule": "EXCEL",
+    "domain": "sparklines",
+    "difficulty": 2,
+    "questionText": "Que sont les sparklines dans Excel ?",
+    "options": [
+      "Des graphiques de grande taille insérés dans une feuille",
+      "Des mini-graphiques visuels insérés dans une seule cellule",
+      "Des formules qui génèrent des graphiques automatiquement",
+      "Des modèles de graphiques prédéfinis"
+    ],
+    "correctIndex": 1,
+    "explanation": "Les sparklines sont de minuscules graphiques (courbe, colonne, gain/perte) qui tiennent dans une seule cellule. Ils permettent de visualiser une tendance sans encombrer la feuille. Onglet Insertion > Sparklines.",
+    "mosObjective": "5.3.1",
+    "lessonRef": "excel-15"
+  },
+  {
+    "id": "excel-q-031",
+    "appModule": "EXCEL",
+    "domain": "grouper",
+    "difficulty": 2,
+    "questionText": "Comment grouper des lignes pour créer un plan réductible (boutons +/-) dans Excel ?",
+    "options": [
+      "Onglet Affichage > Grouper les lignes",
+      "Sélectionner les lignes > Onglet Données > Plan > Grouper",
+      "Clic droit sur les lignes > Grouper",
+      "Onglet Accueil > Grouper > Lignes"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Données > Plan > Grouper (ou Maj+Alt+Droite). Les boutons +/- apparaissent à gauche pour réduire/développer les groupes. Très utile pour les longs rapports.",
+    "mosObjective": "3.3.1",
+    "lessonRef": "excel-16"
+  },
+  {
+    "id": "excel-q-032",
+    "appModule": "EXCEL",
+    "domain": "mise_en_page_impression",
+    "difficulty": 1,
+    "questionText": "Comment répéter les lignes d'en-tête du tableau sur chaque page imprimée ?",
+    "options": [
+      "Copier l'en-tête manuellement sur chaque page",
+      "Onglet Mise en page > Titres à imprimer > Lignes à répéter en haut",
+      "Onglet Insertion > En-tête et pied de page > Répéter",
+      "Ce n'est pas possible dans Excel"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Mise en page > Mise en page > Titres à imprimer > champ 'Lignes à répéter en haut'. Cliquer sur la ligne d'en-tête dans la feuille pour la sélectionner. Elle apparaîtra sur chaque page imprimée.",
+    "mosObjective": "2.5.1",
+    "lessonRef": "excel-17"
+  },
+  {
+    "id": "excel-q-033",
+    "appModule": "EXCEL",
+    "domain": "mise_en_page_impression",
+    "difficulty": 2,
+    "questionText": "Comment ajuster une feuille Excel pour qu'elle s'imprime sur une seule page en largeur ?",
+    "options": [
+      "Réduire la taille de la police jusqu'à ce que ça tienne",
+      "Onglet Mise en page > Mise à l'échelle > Ajuster à 1 page en largeur",
+      "Onglet Fichier > Imprimer > Ajuster à la page",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "L'option Mise à l'échelle (Onglet Mise en page > groupe Mise à l'échelle) ou dans l'aperçu avant impression (Fichier > Imprimer > Pas de mise à l'échelle > Ajuster la feuille sur une page) permettent cet ajustement.",
+    "mosObjective": "2.5.2",
+    "lessonRef": "excel-17"
+  },
+  {
+    "id": "excel-q-034",
+    "appModule": "EXCEL",
+    "domain": "fonctions_statistiques",
+    "difficulty": 1,
+    "questionText": "Quelle fonction retourne la valeur maximale d'une plage de cellules ?",
+    "options": [
+      "=MAXIMUM(A1:A100)",
+      "=MAX(A1:A100)",
+      "=GRAND(A1:A100)",
+      "=PLUS.GRAND(A1:A100;1)"
+    ],
+    "correctIndex": 1,
+    "explanation": "=MAX(plage) retourne la valeur maximale. =MIN(plage) retourne le minimum. =GRANDE.VALEUR(plage;k) retourne le k-ième plus grand. =PETITE.VALEUR(plage;k) retourne le k-ième plus petit.",
+    "mosObjective": "4.7.1",
+    "lessonRef": "excel-18"
+  },
+  {
+    "id": "excel-q-035",
+    "appModule": "EXCEL",
+    "domain": "fonctions_statistiques",
+    "difficulty": 2,
+    "questionText": "Quelle fonction compte le nombre de cellules non vides dans une plage ?",
+    "options": [
+      "=NB(A1:A100)",
+      "=NBVAL(A1:A100)",
+      "=NB.VIDE(A1:A100)",
+      "=COMPTER(A1:A100)"
+    ],
+    "correctIndex": 1,
+    "explanation": "=NBVAL(plage) compte les cellules non vides (texte, nombres, erreurs). =NB(plage) compte uniquement les cellules contenant des nombres. =NB.VIDE(plage) compte les cellules vides.",
+    "mosObjective": "4.7.2",
+    "lessonRef": "excel-18"
+  },
+  {
+    "id": "excel-q-036",
+    "appModule": "EXCEL",
+    "domain": "feuilles",
+    "difficulty": 1,
+    "questionText": "Comment renommer une feuille de calcul dans Excel ?",
+    "options": [
+      "Onglet Accueil > Renommer la feuille",
+      "Double-clic sur l'onglet de la feuille > taper le nouveau nom",
+      "Clic droit sur l'onglet > Renommer",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Double-clic sur l'onglet ou clic droit > Renommer permettent tous les deux de renommer une feuille. Le nom peut contenir des espaces mais pas certains caractères spéciaux (/, \\, ?, *, [, ]).",
+    "mosObjective": "1.1.1",
+    "lessonRef": "excel-19"
+  },
+  {
+    "id": "excel-q-037",
+    "appModule": "EXCEL",
+    "domain": "feuilles",
+    "difficulty": 2,
+    "questionText": "Comment créer une formule qui référence une cellule dans une autre feuille du même classeur ?",
+    "options": [
+      "=A1 (Excel trouve automatiquement la bonne feuille)",
+      "=NomFeuille!A1",
+      "=NomFeuille>A1",
+      "=[NomFeuille]A1"
+    ],
+    "correctIndex": 1,
+    "explanation": "La syntaxe est =NomFeuille!CelluleRéférence. Si le nom de feuille contient des espaces, il faut l'entourer d'apostrophes : ='Nom Feuille'!A1. Pour un autre classeur : =[NomClasseur.xlsx]NomFeuille!A1.",
+    "mosObjective": "1.1.2",
+    "lessonRef": "excel-19"
+  },
+  {
+    "id": "excel-q-038",
+    "appModule": "EXCEL",
+    "domain": "saisie_donnees",
+    "difficulty": 1,
+    "questionText": "Comment remplir automatiquement une série de dates (lundi, mardi, ...) dans Excel ?",
+    "options": [
+      "Taper toutes les dates manuellement",
+      "Taper la première valeur > tirer la poignée de recopie vers le bas",
+      "Onglet Données > Série > Remplissage automatique",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "La poignée de recopie (petit carré en bas à droite de la sélection) permet de compléter automatiquement les séries (dates, jours, mois, nombres). Onglet Accueil > Remplissage > Série permet plus de contrôle.",
+    "mosObjective": "1.2.1",
+    "lessonRef": "excel-20"
+  },
+  {
+    "id": "excel-q-039",
+    "appModule": "EXCEL",
+    "domain": "saisie_donnees",
+    "difficulty": 2,
+    "questionText": "Comment remplir instantanément une colonne en reconnaissant le modèle des données saisies (Flash Fill) ?",
+    "options": [
+      "Ctrl+E",
+      "Onglet Données > Remplissage instantané",
+      "Excel le fait automatiquement en détectant le modèle",
+      "Toutes les options sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le Remplissage instantané (Flash Fill) est activé par Ctrl+E, via Données > Remplissage instantané, ou automatiquement quand Excel détecte un modèle. Très utile pour séparer noms/prénoms, reformater des données, etc.",
+    "mosObjective": "1.2.2",
+    "lessonRef": "excel-20"
+  },
+  {
+    "id": "excel-q-040",
+    "appModule": "EXCEL",
+    "domain": "graphiques",
+    "difficulty": 2,
+    "questionText": "Comment changer le type de graphique d'un graphique existant dans Excel ?",
+    "options": [
+      "Supprimer et recréer un nouveau graphique",
+      "Clic droit sur le graphique > Modifier le type de graphique",
+      "Onglet Création du graphique > Modifier le type de graphique",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Clic droit > Modifier le type de graphique, ou Onglet Création > Type > Modifier le type de graphique. Une galerie complète de tous les types disponibles s'affiche pour choisir le nouveau type.",
+    "mosObjective": "5.2.3",
+    "lessonRef": "excel-09"
+  },
+  {
+    "id": "excel-q-041",
+    "appModule": "EXCEL",
+    "domain": "formules_logiques",
+    "difficulty": 2,
+    "questionText": "Quelle formule vérifie si TOUTES les conditions sont vraies : A1>0 ET B1>0 ET C1>0 ?",
+    "options": [
+      "=SI(A1>0;SI(B1>0;SI(C1>0;\"Oui\";\"Non\");\"Non\");\"Non\")",
+      "=ET(A1>0;B1>0;C1>0)",
+      "=SI(ET(A1>0;B1>0;C1>0);\"Oui\";\"Non\")",
+      "Les options A et C sont correctes, B retourne VRAI/FAUX"
+    ],
+    "correctIndex": 3,
+    "explanation": "=ET(cond1;cond2;...) retourne VRAI/FAUX. Pour afficher un texte, on l'encapsule dans SI. L'option A (SI imbriqués) fonctionne aussi mais est moins lisible. Les options A et C produisent le même résultat.",
+    "mosObjective": "4.2.4",
+    "lessonRef": "excel-02"
+  },
+  {
+    "id": "excel-q-042",
+    "appModule": "EXCEL",
+    "domain": "formules_logiques",
+    "difficulty": 2,
+    "questionText": "Quelle fonction retourne VRAI si AU MOINS UNE des conditions est vraie ?",
+    "options": [
+      "=ET(condition1; condition2)",
+      "=OU(condition1; condition2)",
+      "=XOU(condition1; condition2)",
+      "=VRAI.SI(condition1; condition2)"
+    ],
+    "correctIndex": 1,
+    "explanation": "=OU(cond1;cond2;...) retourne VRAI si au moins une condition est vraie. =ET() exige que toutes soient vraies. =XOU() est le OU exclusif (VRAI si exactement une condition est vraie).",
+    "mosObjective": "4.2.5",
+    "lessonRef": "excel-02"
+  },
+  {
+    "id": "excel-q-043",
+    "appModule": "EXCEL",
+    "domain": "segments",
+    "difficulty": 2,
+    "questionText": "Qu'est-ce qu'un segment (Slicer) dans Excel et à quoi sert-il ?",
+    "options": [
+      "Un outil pour couper des cellules",
+      "Un filtre visuel interactif pour les tableaux et TCD",
+      "Un type de graphique spécial",
+      "Une fonction pour diviser du texte"
+    ],
+    "correctIndex": 1,
+    "explanation": "Les segments sont des filtres visuels sous forme de boutons cliquables. Ils filtrent les données d'un tableau structuré ou d'un TCD de façon interactive et intuitive. Onglet Insertion > Segment (ou Analyse TCD > Segment).",
+    "mosObjective": "5.1.4",
+    "lessonRef": "excel-08"
+  },
+  {
+    "id": "excel-q-044",
+    "appModule": "EXCEL",
+    "domain": "mise_en_forme",
+    "difficulty": 1,
+    "questionText": "Comment fusionner plusieurs cellules et centrer le contenu dans Excel ?",
+    "options": [
+      "Sélectionner les cellules > Onglet Accueil > Fusionner et centrer",
+      "Clic droit > Format de cellule > Alignement > Fusionner",
+      "Ctrl+M pour fusionner",
+      "Les options A et B sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le bouton 'Fusionner et centrer' dans l'onglet Accueil est la méthode rapide. Format de cellule > Alignement permet aussi la fusion. Attention : la fusion empêche le tri sur les colonnes concernées.",
+    "mosObjective": "2.2.2",
+    "lessonRef": "excel-04"
+  },
+  {
+    "id": "excel-q-045",
+    "appModule": "EXCEL",
+    "domain": "raccourcis",
+    "difficulty": 1,
+    "questionText": "Quel raccourci clavier sélectionne toute la feuille de calcul ?",
+    "options": [
+      "Ctrl+A",
+      "Ctrl+Maj+Fin",
+      "Cliquer sur le coin en haut à gauche (intersection lignes/colonnes)",
+      "Les options A et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ctrl+A sélectionne toutes les cellules (ou d'abord le tableau courant, puis toute la feuille au 2e Ctrl+A). Cliquer sur le bouton d'intersection des en-têtes de lignes et colonnes sélectionne aussi toute la feuille.",
+    "mosObjective": "1.3.1",
+    "lessonRef": "excel-21"
+  },
+  {
+    "id": "excel-q-046",
+    "appModule": "EXCEL",
+    "domain": "fonctions_avancees",
+    "difficulty": 3,
+    "questionText": "Quelle fonction Excel 365 remplace avantageusement RECHERCHEV en permettant de retourner plusieurs colonnes ?",
+    "options": [
+      "=RECHERCHEX(valeur; plage_recherche; plage_retour)",
+      "=INDEXMULTI(valeur; tableau)",
+      "=VLOOKUP2(valeur; tableau; colonnes)",
+      "=MULTIRECHERCHE(valeur; tableau)"
+    ],
+    "correctIndex": 0,
+    "explanation": "=RECHERCHEX() (XLOOKUP en anglais) est disponible dans Excel 365/2021. Il peut chercher dans n'importe quelle direction, retourner plusieurs colonnes, et a un argument pour la valeur par défaut si non trouvé — bien plus flexible que RECHERCHEV.",
+    "mosObjective": "4.3.3",
+    "lessonRef": "excel-03"
+  },
+  {
+    "id": "excel-q-047",
+    "appModule": "EXCEL",
+    "domain": "fonctions_avancees",
+    "difficulty": 3,
+    "questionText": "Que fait la formule =NB.SI.ENS() ?",
+    "options": [
+      "Compte les cellules satisfaisant une seule condition",
+      "Compte les cellules satisfaisant plusieurs conditions simultanément",
+      "Somme les cellules satisfaisant plusieurs conditions",
+      "Moyenne des cellules selon plusieurs critères"
+    ],
+    "correctIndex": 1,
+    "explanation": "=NB.SI.ENS(plage1;critère1;plage2;critère2;...) compte les cellules qui satisfont TOUTES les conditions spécifiées. =SOMME.SI.ENS() additionne, =MOYENNE.SI.ENS() calcule la moyenne selon plusieurs critères.",
+    "mosObjective": "4.2.6",
+    "lessonRef": "excel-02"
+  },
+  {
+    "id": "excel-q-048",
+    "appModule": "EXCEL",
+    "domain": "affichage",
+    "difficulty": 1,
+    "questionText": "Comment figer les volets pour que les en-têtes restent visibles lors du défilement ?",
+    "options": [
+      "Onglet Affichage > Figer les volets",
+      "Sélectionner la cellule en dessous et à droite de la zone à figer > Affichage > Figer les volets",
+      "Clic droit sur la ligne > Figer",
+      "Option A uniquement"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pour figer lignes et colonnes simultanément, placer le curseur dans la cellule juste en dessous et à droite de la zone à figer, puis Affichage > Fenêtre > Figer les volets. 'Figer la ligne supérieure' et 'Figer la première colonne' sont des raccourcis directs.",
+    "mosObjective": "1.4.1",
+    "lessonRef": "excel-22"
+  },
+  {
+    "id": "excel-q-049",
+    "appModule": "EXCEL",
+    "domain": "import_donnees",
+    "difficulty": 2,
+    "questionText": "Comment importer des données d'un fichier CSV dans Excel ?",
+    "options": [
+      "Ouvrir directement le fichier CSV dans Excel",
+      "Onglet Données > Obtenir des données > À partir d'un fichier > CSV",
+      "Copier-coller le contenu du fichier CSV",
+      "Les options A et B sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ouvrir directement un CSV fonctionne mais peut mal interpréter les séparateurs. Onglet Données > Obtenir et transformer > À partir d'un fichier texte/CSV offre plus de contrôle (choix du délimiteur, type des colonnes, etc.).",
+    "mosObjective": "1.5.1",
+    "lessonRef": "excel-23"
+  },
+  {
+    "id": "excel-q-050",
+    "appModule": "EXCEL",
+    "domain": "audit_formules",
+    "difficulty": 3,
+    "questionText": "Comment identifier visuellement quelles cellules influencent le résultat d'une formule (antécédents) ?",
+    "options": [
+      "Lire la formule et identifier manuellement les cellules",
+      "Onglet Formules > Audit des formules > Repérer les antécédents",
+      "Ctrl+[ pour sélectionner les cellules référencées",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Onglet Formules > Audit des formules > Repérer les antécédents dessine des flèches bleues vers les cellules utilisées dans la formule. Ctrl+[ sélectionne directement ces cellules. 'Repérer les dépendants' fait l'inverse.",
+    "mosObjective": "4.8.1",
+    "lessonRef": "excel-24"
+  }
+]
