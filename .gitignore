@@ -44,9 +44,6 @@ frontend/.env.test.local
 frontend/.env.production.local
 frontend/coverage/
 
-# ── Docker ───────────────────────────────────────────────
-/docker/
-
 # ── Generated diagrams / screenshots ─────────────────────
 *.png
 *.svg
