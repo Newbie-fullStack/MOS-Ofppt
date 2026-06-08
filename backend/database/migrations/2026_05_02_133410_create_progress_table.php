@@ -13,7 +13,7 @@ return new class extends Migration {
             $table->boolean('completed')->default(false);
             $table->timestamp('completed_at')->nullable();
             $table->integer('time_spent_sec')->default(0);
-            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
+            $table->timestamp('updated_at')->useCurrent();
             $table->primary(['user_id', 'lesson_id']);
         });
     }

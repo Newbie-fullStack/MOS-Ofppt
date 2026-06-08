@@ -1,7 +1,11 @@
 # ───────────────────────────────────────────────────────────
 # Stage 1 : Build React Frontend
 # ───────────────────────────────────────────────────────────
+ARG VITE_API_URL=""
 FROM node:20-alpine AS frontend-build
+
+ARG VITE_API_URL
+ENV VITE_API_URL=${VITE_API_URL}
 
 WORKDIR /build
 
@@ -25,8 +29,10 @@ RUN apk add --no-cache \
     libzip-dev \
     oniguruma-dev \
     netcat-openbsd \
+    postgresql-dev \
     && docker-php-ext-install -j$(nproc) \
-        pdo_mysql \
+        pdo_pgsql \
+        pgsql \
         mbstring \
         bcmath \
         zip
@@ -39,7 +45,13 @@ WORKDIR /var/www/html
 
 COPY backend/ .
 
+# Create a temporary .env so Laravel scripts (package:discover, etc.) can run
+RUN if [ ! -f .env ]; then cp .env.example .env 2>/dev/null || true; fi
+
 RUN composer install --no-dev --optimize-autoloader --no-interaction
+
+# Remove the temporary .env — start.sh will create it at runtime from env vars
+RUN rm -f .env
 
 # ── Frontend build into Laravel public/ ──────────────────
 COPY --from=frontend-build /build/dist /var/www/html/public
