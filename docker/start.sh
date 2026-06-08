@@ -65,7 +65,6 @@ if [ -n "$DATABASE_URL" ] || [ -n "$DB_HOST" ]; then
         sleep 2
     done
     php artisan migrate --force 2>/dev/null || true
-    php artisan db:seed --force 2>/dev/null || true
 fi
 
 echo "Starting PHP-FPM..."
