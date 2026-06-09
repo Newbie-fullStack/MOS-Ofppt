@@ -1,0 +1,89 @@
+version: '3.9'
+
+# ──────────────────────────────────────────────────────────────
+# Docker Compose — MOS OFPPT (Laravel + React)
+# Commandes :
+#   docker-compose up -d          → Démarrer tous les services
+#   docker-compose down -v        → Reset complet (⚠️ supprime données)
+#   docker-compose logs -f        → Logs en temps réel
+# ──────────────────────────────────────────────────────────────
+
+services:
+
+  # ── MySQL 8 ─────────────────────────────────────────────────
+  mysql:
+    image: mysql:8.0
+    container_name: mos_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-root_secret}
+      MYSQL_DATABASE: ${DB_DATABASE:-mos_ofppt}
+      MYSQL_USER: ${DB_USERNAME:-mos_user}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-mos_secret}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    command: --default-authentication-plugin=mysql_native_password
+             --character-set-server=utf8mb4
+             --collation-server=utf8mb4_unicode_ci
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_ROOT_PASSWORD:-root_secret}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Redis ────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: mos_redis
+    restart: unless-stopped
+    command: redis-server --requirepass ${REDIS_PASSWORD:-redis_secret}
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD:-redis_secret}", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── phpMyAdmin ───────────────────────────────────────────────
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: mos_phpmyadmin
+    restart: unless-stopped
+    profiles: ["tools"]    # docker-compose --profile tools up -d
+    depends_on:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: ${DB_ROOT_PASSWORD:-root_secret}
+    ports:
+      - "8080:80"
+
+  # ── MailHog (emails de dev) ──────────────────────────────────
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: mos_mailhog
+    restart: unless-stopped
+    profiles: ["tools"]
+    ports:
+      - "1025:1025"   # SMTP
+      - "8025:8025"   # Interface web
+
+volumes:
+  mysql_data:
+    driver: local
+  redis_data:
+    driver: local
+
+# ──────────────────────────────────────────────────────────────
+# Note : Laravel et React tournent en local (pas dans Docker)
+# Le Docker gère uniquement MySQL + Redis
+# Backend Laravel : php artisan serve --port=8000
+# Frontend React  : npm run dev (port 5173)
+# ──────────────────────────────────────────────────────────────

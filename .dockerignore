@@ -27,8 +27,6 @@ Thumbs.db
 *.swo
 
 # ── Temp / generated ───────────────────────────────────
-content/
-fichier a utilise/
 Rapport_*.docx
 Rapport_*.pdf
 diagramme de class.png

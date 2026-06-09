@@ -1,0 +1,852 @@
+[
+  {
+    "id": "word-q-001",
+    "appModule": "WORD",
+    "domain": "styles",
+    "difficulty": 1,
+    "questionText": "Comment appliquer rapidement le style Titre 1 à un paragraphe sélectionné ?",
+    "options": [
+      "Onglet Insertion > Titre 1",
+      "Onglet Accueil > Groupe Styles > Titre 1",
+      "Onglet Mise en page > Styles > Titre 1",
+      "Clic droit > Paragraphe > Titre 1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le groupe Styles se trouve dans l'onglet Accueil. Il contient tous les styles prédéfinis dont Titre 1, Titre 2, Titre 3. Raccourci : Ctrl+Alt+1.",
+    "mosObjective": "1.1.1",
+    "lessonRef": "word-01"
+  },
+  {
+    "id": "word-q-002",
+    "appModule": "WORD",
+    "domain": "styles",
+    "difficulty": 1,
+    "questionText": "Quel raccourci clavier permet d'appliquer le style Titre 2 ?",
+    "options": [
+      "Ctrl+Alt+1",
+      "Ctrl+Alt+2",
+      "Ctrl+Maj+2",
+      "Alt+2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ctrl+Alt+1 applique Titre 1, Ctrl+Alt+2 applique Titre 2, Ctrl+Alt+3 applique Titre 3. Ces raccourcis sont les mêmes dans toutes les versions de Word.",
+    "mosObjective": "1.1.1",
+    "lessonRef": "word-01"
+  },
+  {
+    "id": "word-q-003",
+    "appModule": "WORD",
+    "domain": "table_des_matieres",
+    "difficulty": 2,
+    "questionText": "Où se trouve la commande pour insérer une table des matières automatique dans Word ?",
+    "options": [
+      "Onglet Accueil > Paragraphe",
+      "Onglet Insertion > Texte",
+      "Onglet Références > Table des matières",
+      "Onglet Affichage > Navigation"
+    ],
+    "correctIndex": 2,
+    "explanation": "La table des matières automatique se génère depuis l'onglet Références > groupe Table des matières. Elle se base sur les styles Titre 1, 2, 3 appliqués dans le document.",
+    "mosObjective": "1.1.2",
+    "lessonRef": "word-01"
+  },
+  {
+    "id": "word-q-004",
+    "appModule": "WORD",
+    "domain": "table_des_matieres",
+    "difficulty": 2,
+    "questionText": "Comment mettre à jour une table des matières après modification du document ?",
+    "options": [
+      "La supprimer et la recréer",
+      "Clic droit sur la table > Mettre à jour les champs",
+      "Onglet Révision > Mettre à jour",
+      "Fermer et rouvrir le document"
+    ],
+    "correctIndex": 1,
+    "explanation": "Un clic droit sur la table des matières affiche l'option 'Mettre à jour les champs'. On peut choisir de mettre à jour les numéros de page uniquement ou toute la table.",
+    "mosObjective": "1.1.2",
+    "lessonRef": "word-01"
+  },
+  {
+    "id": "word-q-005",
+    "appModule": "WORD",
+    "domain": "styles",
+    "difficulty": 2,
+    "questionText": "Comment modifier la police d'un style existant pour qu'elle s'applique à tout le document ?",
+    "options": [
+      "Sélectionner tout le texte et changer la police",
+      "Clic droit sur le style dans la galerie > Modifier",
+      "Onglet Mise en page > Polices",
+      "Insertion > Objet > Style"
+    ],
+    "correctIndex": 1,
+    "explanation": "Un clic droit sur n'importe quel style dans la galerie Styles (onglet Accueil) permet de le modifier. Tout texte utilisant ce style sera mis à jour automatiquement.",
+    "mosObjective": "1.1.3",
+    "lessonRef": "word-01"
+  },
+  {
+    "id": "word-q-006",
+    "appModule": "WORD",
+    "domain": "mise_en_page",
+    "difficulty": 1,
+    "questionText": "Comment modifier les marges d'un document Word ?",
+    "options": [
+      "Onglet Accueil > Marges",
+      "Onglet Mise en page > Marges",
+      "Onglet Insertion > Marges",
+      "Onglet Affichage > Marges"
+    ],
+    "correctIndex": 1,
+    "explanation": "Les marges se modifient via l'onglet Mise en page (ou Disposition selon la version) > groupe Mise en page > Marges. On peut choisir des valeurs prédéfinies ou des marges personnalisées.",
+    "mosObjective": "2.1.1",
+    "lessonRef": "word-02"
+  },
+  {
+    "id": "word-q-007",
+    "appModule": "WORD",
+    "domain": "mise_en_page",
+    "difficulty": 1,
+    "questionText": "Comment insérer un saut de page dans Word ?",
+    "options": [
+      "Appuyer sur Entrée plusieurs fois",
+      "Ctrl+Entrée",
+      "Onglet Affichage > Saut de page",
+      "Alt+P"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ctrl+Entrée insère un saut de page manuel. On peut aussi utiliser Onglet Insertion > Pages > Saut de page. Appuyer sur Entrée plusieurs fois est une mauvaise pratique à éviter.",
+    "mosObjective": "2.1.2",
+    "lessonRef": "word-02"
+  },
+  {
+    "id": "word-q-008",
+    "appModule": "WORD",
+    "domain": "mise_en_page",
+    "difficulty": 2,
+    "questionText": "Comment créer un document avec 2 colonnes sur certaines pages seulement ?",
+    "options": [
+      "Appliquer les colonnes à tout le document puis supprimer sur les pages concernées",
+      "Utiliser des sections différentes pour chaque mise en page",
+      "Insérer des tableaux à 2 colonnes",
+      "Ce n'est pas possible dans Word"
+    ],
+    "correctIndex": 1,
+    "explanation": "Les sections permettent d'avoir des mises en page différentes dans le même document. On insère un saut de section (Mise en page > Sauts > Section) avant et après la zone à mettre en colonnes.",
+    "mosObjective": "2.1.3",
+    "lessonRef": "word-02"
+  },
+  {
+    "id": "word-q-009",
+    "appModule": "WORD",
+    "domain": "en_tetes_pieds_de_page",
+    "difficulty": 1,
+    "questionText": "Comment insérer un numéro de page dans le pied de page ?",
+    "options": [
+      "Taper le chiffre manuellement dans le pied de page",
+      "Onglet Insertion > En-tête et pied de page > Numéro de page",
+      "Onglet Références > Numéro de page",
+      "Onglet Accueil > Insérer > Numéro"
+    ],
+    "correctIndex": 1,
+    "explanation": "Insertion > En-tête et pied de page > Numéro de page permet d'insérer un numéro automatique qui s'incrémente. Taper manuellement ne fonctionne pas car il faudrait modifier chaque page.",
+    "mosObjective": "2.2.1",
+    "lessonRef": "word-03"
+  },
+  {
+    "id": "word-q-010",
+    "appModule": "WORD",
+    "domain": "en_tetes_pieds_de_page",
+    "difficulty": 2,
+    "questionText": "Comment faire en sorte que la première page d'un document ait un en-tête différent des autres ?",
+    "options": [
+      "Créer une section distincte pour la première page",
+      "Dans les options d'en-tête, cocher 'Première page différente'",
+      "Supprimer l'en-tête de la première page manuellement",
+      "Utiliser un style spécial pour la première page"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dans l'onglet contextuel Création (qui apparaît lors de l'édition d'un en-tête), cocher 'Première page différente' permet d'avoir un en-tête vide ou différent sur la première page.",
+    "mosObjective": "2.2.2",
+    "lessonRef": "word-03"
+  },
+  {
+    "id": "word-q-011",
+    "appModule": "WORD",
+    "domain": "tableaux",
+    "difficulty": 1,
+    "questionText": "Comment insérer un tableau de 3 colonnes et 4 lignes dans Word ?",
+    "options": [
+      "Onglet Accueil > Tableau > 3x4",
+      "Onglet Insertion > Tableau > Insérer un tableau (3 colonnes, 4 lignes)",
+      "Onglet Mise en page > Insérer un tableau",
+      "Onglet Références > Tableau"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Insertion > Tableau permet d'insérer un tableau soit en survolant la grille visuelle, soit via 'Insérer un tableau' pour entrer des valeurs précises.",
+    "mosObjective": "3.1.1",
+    "lessonRef": "word-04"
+  },
+  {
+    "id": "word-q-012",
+    "appModule": "WORD",
+    "domain": "tableaux",
+    "difficulty": 2,
+    "questionText": "Comment fusionner plusieurs cellules d'un tableau Word ?",
+    "options": [
+      "Clic droit > Fusionner les cellules (après sélection)",
+      "Onglet Accueil > Fusionner",
+      "Supprimer les bordures entre les cellules",
+      "Onglet Disposition > Fractionner les cellules"
+    ],
+    "correctIndex": 0,
+    "explanation": "Après avoir sélectionné les cellules à fusionner, un clic droit affiche 'Fusionner les cellules'. On peut aussi utiliser l'onglet contextuel Disposition > groupe Fusionner > Fusionner les cellules.",
+    "mosObjective": "3.1.2",
+    "lessonRef": "word-04"
+  },
+  {
+    "id": "word-q-013",
+    "appModule": "WORD",
+    "domain": "tableaux",
+    "difficulty": 2,
+    "questionText": "Comment répéter la ligne d'en-tête d'un tableau sur chaque page ?",
+    "options": [
+      "Copier-coller la première ligne sur chaque page",
+      "Sélectionner la ligne d'en-tête > Onglet Disposition > Répéter les lignes d'en-tête",
+      "Onglet Création du tableau > Première colonne",
+      "Ce n'est pas possible dans Word"
+    ],
+    "correctIndex": 1,
+    "explanation": "En sélectionnant la ligne d'en-tête puis Onglet Disposition > Données > Répéter les lignes d'en-tête, Word répète automatiquement cette ligne en haut de chaque page.",
+    "mosObjective": "3.1.3",
+    "lessonRef": "word-04"
+  },
+  {
+    "id": "word-q-014",
+    "appModule": "WORD",
+    "domain": "images",
+    "difficulty": 1,
+    "questionText": "Comment insérer une image depuis le disque dur dans un document Word ?",
+    "options": [
+      "Glisser-déposer uniquement",
+      "Onglet Insertion > Images > Ce périphérique",
+      "Onglet Accueil > Insérer > Image",
+      "Ctrl+I"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Insertion > groupe Illustrations > Images > Ce périphérique ouvre l'explorateur de fichiers pour choisir une image locale. On peut aussi glisser-déposer, mais le menu est la méthode officielle MOS.",
+    "mosObjective": "3.2.1",
+    "lessonRef": "word-05"
+  },
+  {
+    "id": "word-q-015",
+    "appModule": "WORD",
+    "domain": "images",
+    "difficulty": 2,
+    "questionText": "Comment faire en sorte que le texte entoure une image insérée dans Word ?",
+    "options": [
+      "Redimensionner l'image pour qu'elle tienne dans le texte",
+      "Sélectionner l'image > Habillage du texte > Carré (ou autre option)",
+      "Insérer l'image dans un tableau à côté du texte",
+      "Utiliser une zone de texte autour de l'image"
+    ],
+    "correctIndex": 1,
+    "explanation": "Par défaut, une image est 'En ligne avec le texte'. Pour qu'elle soit entourée de texte, sélectionner l'image puis cliquer sur l'icône d'habillage (ou Format > Habillage du texte) et choisir Carré, Rapproché, etc.",
+    "mosObjective": "3.2.2",
+    "lessonRef": "word-05"
+  },
+  {
+    "id": "word-q-016",
+    "appModule": "WORD",
+    "domain": "publipostage",
+    "difficulty": 2,
+    "questionText": "Quelle est la première étape pour réaliser un publipostage dans Word ?",
+    "options": [
+      "Créer les étiquettes",
+      "Préparer le document principal et connecter la source de données",
+      "Imprimer le document",
+      "Insérer les champs de fusion"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le publipostage commence par : 1) Créer/ouvrir le document principal, 2) Le connecter à une source de données (Excel, Access, CSV), 3) Insérer les champs de fusion, 4) Prévisualiser, 5) Terminer et fusionner.",
+    "mosObjective": "4.1.1",
+    "lessonRef": "word-06"
+  },
+  {
+    "id": "word-q-017",
+    "appModule": "WORD",
+    "domain": "publipostage",
+    "difficulty": 2,
+    "questionText": "Comment insérer un champ de fusion dans un document de publipostage ?",
+    "options": [
+      "Taper le nom du champ entre chevrons manuellement",
+      "Onglet Publipostage > Insérer un champ de fusion",
+      "Onglet Insertion > Champ > Fusion",
+      "Ctrl+F > Champ de fusion"
+    ],
+    "correctIndex": 1,
+    "explanation": "Une fois la source de données connectée, l'onglet Publipostage devient actif. 'Insérer un champ de fusion' affiche la liste des colonnes disponibles dans la source de données.",
+    "mosObjective": "4.1.2",
+    "lessonRef": "word-06"
+  },
+  {
+    "id": "word-q-018",
+    "appModule": "WORD",
+    "domain": "publipostage",
+    "difficulty": 3,
+    "questionText": "Comment filtrer les destinataires dans un publipostage pour n'envoyer qu'aux personnes d'une ville donnée ?",
+    "options": [
+      "Supprimer manuellement les lignes non voulues dans la source Excel",
+      "Onglet Publipostage > Modifier la liste des destinataires > Filtrer",
+      "Créer un nouveau document pour chaque ville",
+      "Ce n'est pas possible dans Word"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Publipostage > Modifier la liste des destinataires permet d'appliquer des filtres sur les colonnes (ex: Ville = 'Casablanca'). Seuls les enregistrements correspondants seront fusionnés.",
+    "mosObjective": "4.1.3",
+    "lessonRef": "word-06"
+  },
+  {
+    "id": "word-q-019",
+    "appModule": "WORD",
+    "domain": "revision",
+    "difficulty": 1,
+    "questionText": "Comment activer le suivi des modifications dans Word ?",
+    "options": [
+      "Onglet Affichage > Suivi",
+      "Onglet Révision > Suivi des modifications",
+      "Onglet Accueil > Modifications > Activer",
+      "Ctrl+Maj+E"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Révision > groupe Suivi > Suivi des modifications (ou Ctrl+Maj+E). Toutes les modifications suivantes seront enregistrées avec le nom de l'auteur et marquées visuellement.",
+    "mosObjective": "5.1.1",
+    "lessonRef": "word-07"
+  },
+  {
+    "id": "word-q-020",
+    "appModule": "WORD",
+    "domain": "revision",
+    "difficulty": 2,
+    "questionText": "Comment accepter toutes les modifications suivies d'un seul coup ?",
+    "options": [
+      "Supprimer toutes les marques de révision manuellement",
+      "Onglet Révision > Accepter > Accepter toutes les modifications",
+      "Désactiver le suivi des modifications",
+      "Enregistrer le document sous un nouveau nom"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Révision > groupe Modifications > flèche sous Accepter > Accepter toutes les modifications. On peut aussi accepter/refuser modification par modification avec les boutons Accepter/Refuser.",
+    "mosObjective": "5.1.2",
+    "lessonRef": "word-07"
+  },
+  {
+    "id": "word-q-021",
+    "appModule": "WORD",
+    "domain": "revision",
+    "difficulty": 1,
+    "questionText": "Comment insérer un commentaire sur une portion de texte sélectionnée ?",
+    "options": [
+      "Onglet Insertion > Commentaire",
+      "Onglet Révision > Nouveau commentaire",
+      "Clic droit > Commentaire",
+      "Les deux options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "On peut insérer un commentaire via Onglet Révision > Nouveau commentaire, ou en faisant clic droit sur le texte sélectionné > Nouveau commentaire. Le raccourci est Ctrl+Alt+M.",
+    "mosObjective": "5.1.3",
+    "lessonRef": "word-07"
+  },
+  {
+    "id": "word-q-022",
+    "appModule": "WORD",
+    "domain": "recherche_remplacement",
+    "difficulty": 1,
+    "questionText": "Quel raccourci clavier ouvre la boîte de dialogue Rechercher et remplacer ?",
+    "options": [
+      "Ctrl+F",
+      "Ctrl+H",
+      "Ctrl+R",
+      "Ctrl+G"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ctrl+H ouvre Rechercher et remplacer. Ctrl+F ouvre le volet de recherche simple. Dans l'examen MOS, il faut connaître les deux raccourcis.",
+    "mosObjective": "1.2.1",
+    "lessonRef": "word-08"
+  },
+  {
+    "id": "word-q-023",
+    "appModule": "WORD",
+    "domain": "recherche_remplacement",
+    "difficulty": 2,
+    "questionText": "Comment remplacer un mot par un autre avec une mise en forme spécifique (ex: gras) via Rechercher/Remplacer ?",
+    "options": [
+      "Ce n'est pas possible avec Rechercher/Remplacer",
+      "Dans la boîte Rechercher et remplacer, cliquer sur Plus > Format > Police dans le champ Remplacer par",
+      "Remplacer d'abord le texte, puis appliquer le gras manuellement",
+      "Utiliser les macros uniquement"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dans la boîte Rechercher et remplacer, le bouton Plus > Format permet d'appliquer une mise en forme (police, paragraphe, style) au texte de remplacement. Très utile pour les remplacements avec mise en forme.",
+    "mosObjective": "1.2.2",
+    "lessonRef": "word-08"
+  },
+  {
+    "id": "word-q-024",
+    "appModule": "WORD",
+    "domain": "references",
+    "difficulty": 2,
+    "questionText": "Comment insérer une note de bas de page dans Word ?",
+    "options": [
+      "Onglet Insertion > Note de bas de page",
+      "Onglet Références > Insérer une note de bas de page",
+      "Onglet Accueil > Notes",
+      "Ctrl+Alt+N"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Références > groupe Notes de bas de page > Insérer une note de bas de page (raccourci : Ctrl+Alt+B). Le curseur se place automatiquement en bas de page pour saisir le texte de la note.",
+    "mosObjective": "6.1.1",
+    "lessonRef": "word-09"
+  },
+  {
+    "id": "word-q-025",
+    "appModule": "WORD",
+    "domain": "references",
+    "difficulty": 2,
+    "questionText": "Comment insérer un signet dans un document Word ?",
+    "options": [
+      "Onglet Accueil > Signet",
+      "Onglet Insertion > Liens > Signet",
+      "Onglet Références > Signet",
+      "Clic droit > Insérer un signet"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Insertion > groupe Liens > Signet. Le signet permet de marquer un emplacement dans le document et d'y créer un lien hypertexte ou de s'y déplacer rapidement via Ctrl+G.",
+    "mosObjective": "6.1.2",
+    "lessonRef": "word-09"
+  },
+  {
+    "id": "word-q-026",
+    "appModule": "WORD",
+    "domain": "references",
+    "difficulty": 3,
+    "questionText": "Comment créer un renvoi vers un titre ou une figure dans Word ?",
+    "options": [
+      "Copier le titre et le coller en lien hypertexte",
+      "Onglet Insertion > Liens > Renvoi",
+      "Onglet Références > Renvoi",
+      "Les options B et C sont toutes les deux correctes selon la version"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le renvoi peut être inséré via Onglet Insertion > Liens > Renvoi (Word 2019) ou Onglet Références > Légendes > Renvoi. Il crée un lien dynamique vers un titre, une figure, un tableau ou un signet.",
+    "mosObjective": "6.1.3",
+    "lessonRef": "word-09"
+  },
+  {
+    "id": "word-q-027",
+    "appModule": "WORD",
+    "domain": "listes",
+    "difficulty": 1,
+    "questionText": "Comment créer une liste à plusieurs niveaux (liste hiérarchique) dans Word ?",
+    "options": [
+      "Insérer des espaces pour indenter les sous-éléments",
+      "Onglet Accueil > Liste à plusieurs niveaux",
+      "Onglet Insertion > Liste > Multiniveaux",
+      "Utiliser le style Titre pour chaque niveau"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Accueil > groupe Paragraphe > Liste à plusieurs niveaux. Après création, Tab augmente le niveau d'un élément et Maj+Tab le diminue pour créer la hiérarchie.",
+    "mosObjective": "3.3.1",
+    "lessonRef": "word-10"
+  },
+  {
+    "id": "word-q-028",
+    "appModule": "WORD",
+    "domain": "listes",
+    "difficulty": 2,
+    "questionText": "Comment recommencer une numérotation de liste à 1 après une interruption ?",
+    "options": [
+      "Supprimer la liste et en créer une nouvelle",
+      "Clic droit sur le premier élément > Recommencer à 1",
+      "Onglet Accueil > Modifier la liste > Recommencer",
+      "Ce n'est pas possible"
+    ],
+    "correctIndex": 1,
+    "explanation": "Un clic droit sur l'élément de liste souhaité affiche l'option 'Recommencer à 1'. On peut aussi définir la valeur de départ via clic droit > 'Définir la valeur de numérotation'.",
+    "mosObjective": "3.3.2",
+    "lessonRef": "word-10"
+  },
+  {
+    "id": "word-q-029",
+    "appModule": "WORD",
+    "domain": "formes",
+    "difficulty": 1,
+    "questionText": "Comment insérer une forme géométrique (rectangle, cercle) dans Word ?",
+    "options": [
+      "Onglet Insertion > Illustrations > Formes",
+      "Onglet Accueil > Formes",
+      "Onglet Dessin > Formes (si disponible)",
+      "Option A uniquement"
+    ],
+    "correctIndex": 0,
+    "explanation": "Onglet Insertion > groupe Illustrations > Formes affiche la galerie complète des formes disponibles. Après sélection, on dessine la forme en maintenant le bouton de la souris enfoncé.",
+    "mosObjective": "3.2.3",
+    "lessonRef": "word-11"
+  },
+  {
+    "id": "word-q-030",
+    "appModule": "WORD",
+    "domain": "protection",
+    "difficulty": 2,
+    "questionText": "Comment protéger un document Word par un mot de passe à l'ouverture ?",
+    "options": [
+      "Onglet Révision > Protéger le document > Mot de passe",
+      "Fichier > Informations > Protéger le document > Chiffrer avec mot de passe",
+      "Onglet Affichage > Protection > Mot de passe",
+      "Enregistrer sous > Options générales > Mot de passe"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fichier > Informations > Protéger le document > Chiffrer avec un mot de passe. Cette option chiffre le fichier et demande le mot de passe à l'ouverture. L'option D fonctionne aussi dans certaines versions.",
+    "mosObjective": "5.2.1",
+    "lessonRef": "word-12"
+  },
+  {
+    "id": "word-q-031",
+    "appModule": "WORD",
+    "domain": "protection",
+    "difficulty": 2,
+    "questionText": "Comment restreindre la mise en forme d'un document pour n'autoriser que certains styles ?",
+    "options": [
+      "Fichier > Informations > Protéger",
+      "Onglet Révision > Protéger > Restreindre la mise en forme et la modification",
+      "Onglet Accueil > Styles > Verrouiller",
+      "Ce n'est pas possible dans Word"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Révision > groupe Protéger > Restreindre la modification permet de limiter les styles autorisés et le type de modifications (lecture seule, commentaires uniquement, formulaires, etc.).",
+    "mosObjective": "5.2.2",
+    "lessonRef": "word-12"
+  },
+  {
+    "id": "word-q-032",
+    "appModule": "WORD",
+    "domain": "enregistrement",
+    "difficulty": 1,
+    "questionText": "Quel format faut-il utiliser pour enregistrer un document Word lisible par les versions antérieures à 2007 ?",
+    "options": [
+      ".docx",
+      ".doc (Word 97-2003)",
+      ".rtf",
+      ".txt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le format .doc (Word 97-2003) assure la compatibilité avec les anciennes versions. Le .docx est le format modern par défaut depuis Word 2007. Via Fichier > Enregistrer sous > Type de fichier.",
+    "mosObjective": "1.3.1",
+    "lessonRef": "word-13"
+  },
+  {
+    "id": "word-q-033",
+    "appModule": "WORD",
+    "domain": "enregistrement",
+    "difficulty": 1,
+    "questionText": "Comment exporter un document Word en PDF ?",
+    "options": [
+      "Copier le contenu dans Adobe Acrobat",
+      "Fichier > Exporter > Créer un document PDF/XPS",
+      "Onglet Insertion > PDF",
+      "Onglet Mise en page > Exporter PDF"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fichier > Exporter > Créer un document PDF/XPS (ou Fichier > Enregistrer sous > PDF). On peut choisir la qualité et les pages à inclure. Le PDF préserve la mise en page pour l'impression.",
+    "mosObjective": "1.3.2",
+    "lessonRef": "word-13"
+  },
+  {
+    "id": "word-q-034",
+    "appModule": "WORD",
+    "domain": "mise_en_forme",
+    "difficulty": 1,
+    "questionText": "Quel raccourci clavier permet d'appliquer la mise en forme Gras ?",
+    "options": [
+      "Ctrl+B",
+      "Ctrl+G",
+      "Ctrl+Maj+G",
+      "Alt+G"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ctrl+B (Bold en anglais) applique/retire le gras. Ctrl+I pour l'italique, Ctrl+U pour le soulignement. Ces raccourcis sont universels dans la suite Microsoft Office.",
+    "mosObjective": "1.4.1",
+    "lessonRef": "word-14"
+  },
+  {
+    "id": "word-q-035",
+    "appModule": "WORD",
+    "domain": "mise_en_forme",
+    "difficulty": 1,
+    "questionText": "Comment copier la mise en forme d'un texte et l'appliquer à un autre texte ?",
+    "options": [
+      "Ctrl+C puis Ctrl+V",
+      "Utiliser l'outil Reproduire la mise en forme (pinceau) dans l'onglet Accueil",
+      "Onglet Mise en page > Copier le format",
+      "Clic droit > Coller la mise en forme"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'outil Reproduire la mise en forme (icône pinceau, onglet Accueil) copie et applique la mise en forme. Un clic simple pour une application, double-clic pour l'appliquer à plusieurs endroits.",
+    "mosObjective": "1.4.2",
+    "lessonRef": "word-14"
+  },
+  {
+    "id": "word-q-036",
+    "appModule": "WORD",
+    "domain": "mise_en_forme",
+    "difficulty": 2,
+    "questionText": "Comment effacer toute la mise en forme d'un texte sélectionné pour revenir au style Normal ?",
+    "options": [
+      "Supprimer et retaper le texte",
+      "Onglet Accueil > Effacer la mise en forme (icône A avec gomme) ou Ctrl+Espace",
+      "Appliquer le style Normal manuellement",
+      "Options B et C sont toutes les deux correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ctrl+Espace efface la mise en forme de caractère. Le bouton 'Effacer la mise en forme' (onglet Accueil, groupe Police) efface tout. Appliquer le style Normal depuis la galerie fonctionne aussi.",
+    "mosObjective": "1.4.3",
+    "lessonRef": "word-14"
+  },
+  {
+    "id": "word-q-037",
+    "appModule": "WORD",
+    "domain": "colonnes",
+    "difficulty": 2,
+    "questionText": "Comment insérer une ligne de séparation visible entre deux colonnes de texte ?",
+    "options": [
+      "Dessiner une ligne manuellement entre les colonnes",
+      "Onglet Mise en page > Colonnes > Autres colonnes > cocher Ligne séparatrice",
+      "Onglet Insertion > Formes > Ligne",
+      "Ce n'est pas possible automatiquement"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dans la boîte de dialogue Colonnes (Mise en page > Colonnes > Autres colonnes), la case 'Ligne séparatrice' ajoute automatiquement une ligne verticale entre les colonnes.",
+    "mosObjective": "2.1.4",
+    "lessonRef": "word-15"
+  },
+  {
+    "id": "word-q-038",
+    "appModule": "WORD",
+    "domain": "tableaux",
+    "difficulty": 3,
+    "questionText": "Comment trier les données d'un tableau Word par ordre alphabétique ?",
+    "options": [
+      "Ce n'est possible que dans Excel",
+      "Sélectionner le tableau > Onglet Disposition > Données > Trier",
+      "Clic droit sur le tableau > Trier",
+      "Onglet Accueil > Trier"
+    ],
+    "correctIndex": 1,
+    "explanation": "Après sélection du tableau, l'onglet contextuel Disposition > groupe Données > Trier permet de trier sur une ou plusieurs colonnes, en ordre croissant ou décroissant, avec ou sans ligne d'en-tête.",
+    "mosObjective": "3.1.4",
+    "lessonRef": "word-04"
+  },
+  {
+    "id": "word-q-039",
+    "appModule": "WORD",
+    "domain": "smartart",
+    "difficulty": 2,
+    "questionText": "Quel type de graphique SmartArt est le plus adapté pour représenter une hiérarchie d'entreprise ?",
+    "options": [
+      "Liste",
+      "Hiérarchie",
+      "Processus",
+      "Cycle"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le type Hiérarchie (aussi appelé Organigramme) est conçu pour représenter des structures organisationnelles. Insertion > SmartArt > Hiérarchie.",
+    "mosObjective": "3.2.4",
+    "lessonRef": "word-16"
+  },
+  {
+    "id": "word-q-040",
+    "appModule": "WORD",
+    "domain": "modeles",
+    "difficulty": 1,
+    "questionText": "Comment créer un nouveau document basé sur un modèle (.dotx) dans Word ?",
+    "options": [
+      "Ouvrir le fichier .dotx directement",
+      "Fichier > Nouveau > rechercher ou parcourir les modèles",
+      "Onglet Insertion > Modèle",
+      "Copier le contenu d'un document existant"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fichier > Nouveau permet d'accéder aux modèles en ligne et aux modèles personnels. Ouvrir un .dotx directement ouvre le modèle lui-même pour le modifier, pas un nouveau document basé sur lui.",
+    "mosObjective": "1.5.1",
+    "lessonRef": "word-17"
+  },
+  {
+    "id": "word-q-041",
+    "appModule": "WORD",
+    "domain": "modeles",
+    "difficulty": 2,
+    "questionText": "Comment enregistrer un document Word comme modèle réutilisable ?",
+    "options": [
+      "Fichier > Enregistrer sous > Type : Modèle Word (.dotx)",
+      "Onglet Développeur > Enregistrer comme modèle",
+      "Copier le fichier dans le dossier Templates",
+      "Renommer le fichier en .dotx dans l'explorateur"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fichier > Enregistrer sous, puis choisir le type 'Modèle Word (.dotx)'. Word propose automatiquement de l'enregistrer dans le dossier Modèles personnalisés Office pour le retrouver dans Fichier > Nouveau.",
+    "mosObjective": "1.5.2",
+    "lessonRef": "word-17"
+  },
+  {
+    "id": "word-q-042",
+    "appModule": "WORD",
+    "domain": "inspection",
+    "difficulty": 3,
+    "questionText": "Comment supprimer les informations personnelles (auteur, commentaires cachés) d'un document avant de le partager ?",
+    "options": [
+      "Supprimer manuellement les commentaires visibles",
+      "Fichier > Informations > Vérifier l'absence de problèmes > Inspecter le document",
+      "Onglet Révision > Supprimer tout",
+      "Enregistrer sous un nouveau nom"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'Inspecteur de document (Fichier > Informations > Vérifier l'absence de problèmes > Inspecter le document) détecte et supprime les commentaires, les révisions, les données personnelles et autres informations cachées.",
+    "mosObjective": "5.3.1",
+    "lessonRef": "word-18"
+  },
+  {
+    "id": "word-q-043",
+    "appModule": "WORD",
+    "domain": "accessibilite",
+    "difficulty": 2,
+    "questionText": "Comment vérifier l'accessibilité d'un document Word pour les personnes handicapées ?",
+    "options": [
+      "Ce n'est pas possible dans Word",
+      "Fichier > Informations > Vérifier l'absence de problèmes > Vérifier l'accessibilité",
+      "Onglet Révision > Accessibilité",
+      "Onglet Affichage > Accessibilité"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le Vérificateur d'accessibilité (Fichier > Infos > Vérifier > Vérifier l'accessibilité) identifie les problèmes comme les images sans texte alternatif, les tableaux sans en-têtes, le contraste insuffisant, etc.",
+    "mosObjective": "5.3.2",
+    "lessonRef": "word-18"
+  },
+  {
+    "id": "word-q-044",
+    "appModule": "WORD",
+    "domain": "affichage",
+    "difficulty": 1,
+    "questionText": "Comment activer le volet de navigation pour se déplacer rapidement entre les titres d'un document ?",
+    "options": [
+      "Ctrl+F puis cliquer sur l'onglet Titres",
+      "Onglet Affichage > cocher Volet de navigation",
+      "Onglet Références > Navigation",
+      "Les options A et B sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le volet de navigation s'ouvre avec Ctrl+F (puis onglet Titres) ou via Onglet Affichage > groupe Afficher > Volet de navigation. Il liste tous les titres et permet la navigation rapide.",
+    "mosObjective": "1.2.3",
+    "lessonRef": "word-19"
+  },
+  {
+    "id": "word-q-045",
+    "appModule": "WORD",
+    "domain": "affichage",
+    "difficulty": 2,
+    "questionText": "Comment afficher les caractères non imprimables (espaces, tabulations, sauts de ligne) ?",
+    "options": [
+      "Onglet Affichage > Brouillon",
+      "Ctrl+Maj+8 ou bouton ¶ dans l'onglet Accueil",
+      "Onglet Mise en page > Caractères spéciaux",
+      "Fichier > Options > Affichage > Marques de mise en forme"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le bouton ¶ (Afficher tout) dans l'onglet Accueil ou le raccourci Ctrl+Maj+8 affichent tous les caractères non imprimables. Indispensable pour détecter les espaces doubles, tabulations, sauts de page.",
+    "mosObjective": "1.2.4",
+    "lessonRef": "word-19"
+  },
+  {
+    "id": "word-q-046",
+    "appModule": "WORD",
+    "domain": "collaboration",
+    "difficulty": 2,
+    "questionText": "Comment partager un document Word pour que plusieurs personnes puissent le modifier simultanément ?",
+    "options": [
+      "Envoyer le fichier par email à tous",
+      "Enregistrer sur OneDrive puis Fichier > Partager > Partager",
+      "Activer le suivi des modifications",
+      "Onglet Révision > Partager le document"
+    ],
+    "correctIndex": 1,
+    "explanation": "La co-édition en temps réel nécessite que le fichier soit enregistré sur OneDrive ou SharePoint. Fichier > Partager permet d'envoyer un lien avec les permissions (lecture ou modification).",
+    "mosObjective": "5.4.1",
+    "lessonRef": "word-20"
+  },
+  {
+    "id": "word-q-047",
+    "appModule": "WORD",
+    "domain": "macros",
+    "difficulty": 3,
+    "questionText": "Comment enregistrer une macro simple dans Word ?",
+    "options": [
+      "Onglet Développeur > Enregistrer une macro",
+      "Onglet Affichage > Macros > Enregistrer une macro",
+      "Les deux options sont correctes",
+      "Ce n'est possible qu'avec Visual Basic"
+    ],
+    "correctIndex": 2,
+    "explanation": "On peut enregistrer une macro via Onglet Affichage > Macros > Enregistrer une macro, ou via Onglet Développeur > Code > Enregistrer une macro. Il faut donner un nom à la macro et éventuellement un raccourci.",
+    "mosObjective": "7.1.1",
+    "lessonRef": "word-21"
+  },
+  {
+    "id": "word-q-048",
+    "appModule": "WORD",
+    "domain": "liens_hypertexte",
+    "difficulty": 1,
+    "questionText": "Comment insérer un lien hypertexte vers un site web dans Word ?",
+    "options": [
+      "Taper l'URL et appuyer sur Entrée",
+      "Sélectionner le texte > Ctrl+K > entrer l'URL",
+      "Onglet Insertion > Liens > Lien hypertexte",
+      "Les options A, B et C sont toutes correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Les trois méthodes fonctionnent : taper une URL et valider crée un lien automatique, Ctrl+K ouvre la boîte Insérer un lien hypertexte, et le menu Insertion > Liens aussi. Dans l'examen MOS, Ctrl+K est le plus rapide.",
+    "mosObjective": "6.2.1",
+    "lessonRef": "word-22"
+  },
+  {
+    "id": "word-q-049",
+    "appModule": "WORD",
+    "domain": "sections",
+    "difficulty": 3,
+    "questionText": "Quel type de saut de section faut-il utiliser pour que la nouvelle section commence sur une page impaire ?",
+    "options": [
+      "Saut de section (page suivante)",
+      "Saut de section (continu)",
+      "Saut de section (page paire)",
+      "Saut de section (page impaire)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le saut de section 'Page impaire' force la nouvelle section à commencer sur la prochaine page impaire (utile pour les chapitres qui doivent commencer sur une page droite dans l'impression recto-verso).",
+    "mosObjective": "2.1.5",
+    "lessonRef": "word-23"
+  },
+  {
+    "id": "word-q-050",
+    "appModule": "WORD",
+    "domain": "index",
+    "difficulty": 3,
+    "questionText": "Quelle est la première étape pour créer un index dans Word ?",
+    "options": [
+      "Générer l'index depuis l'onglet Références",
+      "Marquer les entrées d'index dans le document avec Onglet Références > Marquer l'entrée",
+      "Créer une liste de mots-clés dans un fichier séparé",
+      "Activer le suivi des modifications"
+    ],
+    "correctIndex": 1,
+    "explanation": "La création d'un index se fait en deux étapes : 1) Marquer les entrées (Onglet Références > Index > Marquer l'entrée ou Ctrl+Maj+X) pour chaque terme à indexer, 2) Insérer l'index (Références > Insérer l'index) à l'emplacement souhaité.",
+    "mosObjective": "6.3.1",
+    "lessonRef": "word-24"
+  }
+]

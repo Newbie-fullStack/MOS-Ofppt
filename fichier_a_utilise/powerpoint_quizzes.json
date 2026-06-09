@@ -1,0 +1,852 @@
+[
+  {
+    "id": "ppt-q-001",
+    "appModule": "POWERPOINT",
+    "domain": "diapositives",
+    "difficulty": 1,
+    "questionText": "Comment insérer une nouvelle diapositive dans une présentation PowerPoint ?",
+    "options": [
+      "Ctrl+M ou Onglet Accueil > Nouvelle diapositive",
+      "Onglet Insertion > Diapositive",
+      "Clic droit dans le volet des miniatures > Nouvelle diapositive",
+      "Toutes les options sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ctrl+M est le raccourci le plus rapide. Onglet Accueil > groupe Diapositives > Nouvelle diapositive permet de choisir la disposition. Clic droit dans le volet des miniatures fonctionne aussi.",
+    "mosObjective": "1.1.1",
+    "lessonRef": "ppt-01"
+  },
+  {
+    "id": "ppt-q-002",
+    "appModule": "POWERPOINT",
+    "domain": "diapositives",
+    "difficulty": 1,
+    "questionText": "Comment changer la disposition (layout) d'une diapositive existante ?",
+    "options": [
+      "Supprimer et recréer la diapositive avec la bonne disposition",
+      "Onglet Accueil > Disposition > choisir la nouvelle disposition",
+      "Clic droit sur la diapositive > Disposition",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Onglet Accueil > groupe Diapositives > Disposition affiche la galerie des dispositions disponibles. Clic droit dans le volet miniatures > Disposition fonctionne aussi. Le contenu existant est conservé.",
+    "mosObjective": "1.1.2",
+    "lessonRef": "ppt-01"
+  },
+  {
+    "id": "ppt-q-003",
+    "appModule": "POWERPOINT",
+    "domain": "themes",
+    "difficulty": 1,
+    "questionText": "Comment appliquer un thème graphique à toute une présentation PowerPoint ?",
+    "options": [
+      "Onglet Création > choisir un thème dans la galerie",
+      "Onglet Insertion > Thème",
+      "Onglet Accueil > Styles > Thèmes",
+      "Fichier > Options > Thème"
+    ],
+    "correctIndex": 0,
+    "explanation": "L'onglet Création contient la galerie des thèmes. Un clic sur un thème l'applique à toutes les diapositives. Clic droit sur un thème permet de l'appliquer à la diapositive sélectionnée uniquement.",
+    "mosObjective": "1.2.1",
+    "lessonRef": "ppt-02"
+  },
+  {
+    "id": "ppt-q-004",
+    "appModule": "POWERPOINT",
+    "domain": "themes",
+    "difficulty": 2,
+    "questionText": "Comment modifier les couleurs d'un thème sans changer le thème entier ?",
+    "options": [
+      "Modifier chaque élément manuellement",
+      "Onglet Création > Variantes > Couleurs > choisir une palette",
+      "Onglet Accueil > Couleurs du thème",
+      "Ce n'est possible qu'en modifiant le masque des diapositives"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Création > groupe Variantes > flèche déroulante > Couleurs affiche toutes les palettes de couleurs disponibles. On peut aussi créer une palette personnalisée. Polices et Effets fonctionnent de la même façon.",
+    "mosObjective": "1.2.2",
+    "lessonRef": "ppt-02"
+  },
+  {
+    "id": "ppt-q-005",
+    "appModule": "POWERPOINT",
+    "domain": "masque",
+    "difficulty": 2,
+    "questionText": "Quel est le rôle du Masque des diapositives dans PowerPoint ?",
+    "options": [
+      "Cacher des diapositives pendant la présentation",
+      "Définir la mise en forme globale appliquée à toutes les diapositives",
+      "Créer un modèle pour l'impression uniquement",
+      "Protéger la présentation contre les modifications"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le Masque des diapositives (Onglet Affichage > Masque des diapositives) contrôle la mise en forme de toutes les diapositives basées sur lui. Modifier le masque met à jour toute la présentation instantanément.",
+    "mosObjective": "1.3.1",
+    "lessonRef": "ppt-03"
+  },
+  {
+    "id": "ppt-q-006",
+    "appModule": "POWERPOINT",
+    "domain": "masque",
+    "difficulty": 2,
+    "questionText": "Comment accéder au Masque des diapositives pour le modifier ?",
+    "options": [
+      "Double-clic sur une diapositive vide",
+      "Onglet Affichage > Masque des diapositives",
+      "Clic droit > Modifier le masque",
+      "Onglet Création > Modifier le masque"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Affichage > groupe Modes Masque > Masque des diapositives. Pour quitter ce mode, cliquer sur 'Fermer le mode Masque' dans l'onglet contextuel ou aller dans Affichage > Normal.",
+    "mosObjective": "1.3.2",
+    "lessonRef": "ppt-03"
+  },
+  {
+    "id": "ppt-q-007",
+    "appModule": "POWERPOINT",
+    "domain": "transitions",
+    "difficulty": 1,
+    "questionText": "Comment ajouter une transition entre deux diapositives ?",
+    "options": [
+      "Onglet Animations > Transitions",
+      "Onglet Transitions > choisir un effet dans la galerie",
+      "Onglet Création > Transitions",
+      "Clic droit entre deux diapositives > Ajouter une transition"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'onglet Transitions contient toute la galerie d'effets de transition. Sélectionner d'abord la diapositive de destination (celle qui apparaît avec la transition), puis choisir l'effet.",
+    "mosObjective": "2.1.1",
+    "lessonRef": "ppt-04"
+  },
+  {
+    "id": "ppt-q-008",
+    "appModule": "POWERPOINT",
+    "domain": "transitions",
+    "difficulty": 2,
+    "questionText": "Comment appliquer la même transition à toutes les diapositives d'une présentation ?",
+    "options": [
+      "Sélectionner toutes les diapositives manuellement (Ctrl+A dans le volet) puis appliquer la transition",
+      "Onglet Transitions > Appliquer à toutes",
+      "Les deux options sont correctes",
+      "Ce n'est possible qu'en modifiant le masque"
+    ],
+    "correctIndex": 2,
+    "explanation": "Les deux méthodes fonctionnent. Le bouton 'Appliquer à toutes' dans l'onglet Transitions est la plus rapide. Ctrl+A dans le volet miniatures sélectionne toutes les diapositives, puis on choisit la transition.",
+    "mosObjective": "2.1.2",
+    "lessonRef": "ppt-04"
+  },
+  {
+    "id": "ppt-q-009",
+    "appModule": "POWERPOINT",
+    "domain": "animations",
+    "difficulty": 2,
+    "questionText": "Comment ajouter une animation d'entrée sur un objet dans PowerPoint ?",
+    "options": [
+      "Onglet Création > Animations",
+      "Sélectionner l'objet > Onglet Animations > choisir un effet d'entrée",
+      "Double-clic sur l'objet > Animer",
+      "Onglet Transitions > Effets d'animation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Animations : les effets verts sont des entrées, les effets jaunes des accentuations, les effets rouges des sorties. Après application, un numéro apparaît sur l'objet pour indiquer l'ordre d'animation.",
+    "mosObjective": "2.2.1",
+    "lessonRef": "ppt-05"
+  },
+  {
+    "id": "ppt-q-010",
+    "appModule": "POWERPOINT",
+    "domain": "animations",
+    "difficulty": 2,
+    "questionText": "Comment faire démarrer deux animations simultanément dans PowerPoint ?",
+    "options": [
+      "Les animations simultanées ne sont pas possibles",
+      "Volet Animation > changer le déclencheur de la 2ème animation en 'Avec la précédente'",
+      "Onglet Animations > Simultané",
+      "Ctrl+clic sur les deux animations dans le volet"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dans le Volet Animation (Onglet Animations > Volet Animation), chaque animation a un déclencheur : 'Au clic', 'Avec la précédente' (simultané) ou 'Après la précédente' (séquentiel).",
+    "mosObjective": "2.2.2",
+    "lessonRef": "ppt-05"
+  },
+  {
+    "id": "ppt-q-011",
+    "appModule": "POWERPOINT",
+    "domain": "animations",
+    "difficulty": 3,
+    "questionText": "Comment modifier la durée et le délai d'une animation dans PowerPoint ?",
+    "options": [
+      "Ce n'est pas possible — les durées sont fixes",
+      "Double-clic sur l'animation dans le volet > onglet Minutage",
+      "Onglet Animations > groupe Minutage > champs Durée et Délai",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le groupe Minutage dans l'onglet Animations permet de régler Durée et Délai directement. Double-clic sur une animation dans le Volet Animation ouvre la boîte de dialogue complète avec plus d'options.",
+    "mosObjective": "2.2.3",
+    "lessonRef": "ppt-05"
+  },
+  {
+    "id": "ppt-q-012",
+    "appModule": "POWERPOINT",
+    "domain": "images",
+    "difficulty": 1,
+    "questionText": "Comment insérer une image depuis l'ordinateur dans une diapositive PowerPoint ?",
+    "options": [
+      "Glisser-déposer l'image depuis l'explorateur de fichiers",
+      "Onglet Insertion > Images > Ce périphérique",
+      "Double-clic sur l'espace réservé aux images",
+      "Toutes les options sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Les trois méthodes fonctionnent. Le glisser-déposer est rapide pour une image. Onglet Insertion > Images > Ce périphérique est la méthode officielle MOS. Double-clic sur un espace réservé image ouvre directement la boîte de sélection.",
+    "mosObjective": "3.1.1",
+    "lessonRef": "ppt-06"
+  },
+  {
+    "id": "ppt-q-013",
+    "appModule": "POWERPOINT",
+    "domain": "images",
+    "difficulty": 2,
+    "questionText": "Comment rogner une image pour n'afficher qu'une partie dans PowerPoint ?",
+    "options": [
+      "Supprimer et réinsérer uniquement la portion voulue",
+      "Sélectionner l'image > Onglet Format de l'image > Rogner",
+      "Clic droit sur l'image > Rogner",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "L'outil Rogner (Format de l'image > groupe Taille > Rogner, ou clic droit) affiche des poignées de rognage. Faire glisser pour définir la zone visible. La partie rognée est masquée mais pas supprimée.",
+    "mosObjective": "3.1.2",
+    "lessonRef": "ppt-06"
+  },
+  {
+    "id": "ppt-q-014",
+    "appModule": "POWERPOINT",
+    "domain": "images",
+    "difficulty": 2,
+    "questionText": "Comment supprimer l'arrière-plan d'une image dans PowerPoint ?",
+    "options": [
+      "Ce n'est possible que dans Photoshop",
+      "Sélectionner l'image > Onglet Format > Supprimer l'arrière-plan",
+      "Clic droit > Supprimer l'arrière-plan",
+      "Option B uniquement"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet contextuel Format de l'image > groupe Ajuster > Supprimer l'arrière-plan. PowerPoint détecte automatiquement l'arrière-plan. On peut affiner la sélection avec 'Marquer les zones à conserver/supprimer'.",
+    "mosObjective": "3.1.3",
+    "lessonRef": "ppt-06"
+  },
+  {
+    "id": "ppt-q-015",
+    "appModule": "POWERPOINT",
+    "domain": "formes",
+    "difficulty": 1,
+    "questionText": "Comment dessiner un carré parfait (et non un rectangle) dans PowerPoint ?",
+    "options": [
+      "Utiliser l'outil Carré dans la galerie des formes",
+      "Sélectionner Rectangle puis maintenir Maj enfoncé en dessinant",
+      "Régler manuellement la hauteur et la largeur à la même valeur après création",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Maintenir Maj en dessinant contraint les proportions : rectangle → carré, ellipse → cercle, ligne → horizontale/verticale/45°. Régler les dimensions identiques dans l'onglet Format fonctionne aussi.",
+    "mosObjective": "3.2.1",
+    "lessonRef": "ppt-07"
+  },
+  {
+    "id": "ppt-q-016",
+    "appModule": "POWERPOINT",
+    "domain": "alignement",
+    "difficulty": 2,
+    "questionText": "Comment aligner plusieurs objets sur leurs bords gauches dans PowerPoint ?",
+    "options": [
+      "Déplacer chaque objet manuellement en observant les guides",
+      "Sélectionner tous les objets > Onglet Format > Organiser > Aligner > Aligner à gauche",
+      "Clic droit > Organiser > Aligner à gauche",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sélectionner tous les objets à aligner (Ctrl+clic ou sélection par glisser), puis Onglet Format > Organiser > Aligner > Aligner à gauche. L'alignement se fait par rapport à l'objet le plus à gauche ou à la diapositive.",
+    "mosObjective": "3.3.1",
+    "lessonRef": "ppt-08"
+  },
+  {
+    "id": "ppt-q-017",
+    "appModule": "POWERPOINT",
+    "domain": "alignement",
+    "difficulty": 2,
+    "questionText": "Comment distribuer uniformément plusieurs objets avec un espacement égal entre eux ?",
+    "options": [
+      "Mesurer et déplacer chaque objet manuellement",
+      "Sélectionner les objets > Format > Organiser > Aligner > Distribuer horizontalement/verticalement",
+      "Clic droit > Répartir > Uniformément",
+      "Option B uniquement"
+    ],
+    "correctIndex": 1,
+    "explanation": "Format > Organiser > Aligner > Distribuer horizontalement (ou verticalement) répartit automatiquement l'espace entre les objets de façon égale. Très utile pour les mises en page structurées.",
+    "mosObjective": "3.3.2",
+    "lessonRef": "ppt-08"
+  },
+  {
+    "id": "ppt-q-018",
+    "appModule": "POWERPOINT",
+    "domain": "tableaux",
+    "difficulty": 1,
+    "questionText": "Comment insérer un tableau dans une diapositive PowerPoint ?",
+    "options": [
+      "Onglet Insertion > Tableau > définir le nombre de lignes et colonnes",
+      "Coller un tableau depuis Excel uniquement",
+      "Onglet Accueil > Tableau",
+      "Double-clic sur l'espace réservé contenu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Onglet Insertion > Tableau permet d'insérer un tableau en survolant la grille ou via 'Insérer un tableau'. On peut aussi coller depuis Excel (avec liaison ou non) pour des données complexes.",
+    "mosObjective": "3.4.1",
+    "lessonRef": "ppt-09"
+  },
+  {
+    "id": "ppt-q-019",
+    "appModule": "POWERPOINT",
+    "domain": "graphiques",
+    "difficulty": 1,
+    "questionText": "Comment insérer un graphique dans une diapositive PowerPoint ?",
+    "options": [
+      "Copier-coller uniquement depuis Excel",
+      "Onglet Insertion > Graphique > choisir le type > saisir les données",
+      "Onglet Accueil > Insérer un graphique",
+      "Options A et B sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Onglet Insertion > Graphique ouvre une fenêtre Excel intégrée pour saisir les données. On peut aussi coller un graphique Excel (avec ou sans liaison aux données sources).",
+    "mosObjective": "3.5.1",
+    "lessonRef": "ppt-10"
+  },
+  {
+    "id": "ppt-q-020",
+    "appModule": "POWERPOINT",
+    "domain": "smartart",
+    "difficulty": 2,
+    "questionText": "Comment convertir une liste à puces existante en SmartArt dans PowerPoint ?",
+    "options": [
+      "Supprimer la liste et insérer un SmartArt manuellement",
+      "Sélectionner la zone de texte avec la liste > Clic droit > Convertir en SmartArt",
+      "Onglet Insertion > SmartArt > Convertir",
+      "Ce n'est pas possible"
+    ],
+    "correctIndex": 1,
+    "explanation": "Un clic droit sur une zone de texte contenant une liste à puces propose 'Convertir en SmartArt'. PowerPoint suggère des types adaptés selon le nombre d'éléments.",
+    "mosObjective": "3.6.1",
+    "lessonRef": "ppt-11"
+  },
+  {
+    "id": "ppt-q-021",
+    "appModule": "POWERPOINT",
+    "domain": "video_audio",
+    "difficulty": 1,
+    "questionText": "Comment insérer une vidéo depuis l'ordinateur dans une diapositive PowerPoint ?",
+    "options": [
+      "Glisser-déposer le fichier vidéo sur la diapositive",
+      "Onglet Insertion > Vidéo > Ce périphérique",
+      "Onglet Insertion > Médias > Vidéo > Ce périphérique",
+      "Les options B et C sont correctes selon la version"
+    ],
+    "correctIndex": 3,
+    "explanation": "L'emplacement du menu varie légèrement selon les versions de PowerPoint, mais c'est toujours dans l'onglet Insertion. Le glisser-déposer fonctionne aussi. Formats supportés : MP4, WMV, AVI, etc.",
+    "mosObjective": "3.7.1",
+    "lessonRef": "ppt-12"
+  },
+  {
+    "id": "ppt-q-022",
+    "appModule": "POWERPOINT",
+    "domain": "video_audio",
+    "difficulty": 2,
+    "questionText": "Comment faire démarrer une vidéo automatiquement à l'affichage de la diapositive ?",
+    "options": [
+      "Ce n'est pas possible dans PowerPoint",
+      "Sélectionner la vidéo > Onglet Lecture > Démarrer > Automatiquement",
+      "Onglet Animations > Démarrer > Automatiquement",
+      "Clic droit sur la vidéo > Lecture automatique"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'onglet contextuel Lecture (qui apparaît quand une vidéo est sélectionnée) contient l'option Démarrer avec les choix : 'Au clic dans la séquence', 'Automatiquement', ou 'Au clic sur la vidéo'.",
+    "mosObjective": "3.7.2",
+    "lessonRef": "ppt-12"
+  },
+  {
+    "id": "ppt-q-023",
+    "appModule": "POWERPOINT",
+    "domain": "diaporama",
+    "difficulty": 1,
+    "questionText": "Quel raccourci clavier démarre le diaporama depuis la diapositive courante ?",
+    "options": [
+      "F5 (démarre depuis le début)",
+      "Maj+F5 (démarre depuis la diapositive courante)",
+      "Ctrl+F5",
+      "Les options A et B sont toutes les deux utiles"
+    ],
+    "correctIndex": 3,
+    "explanation": "F5 démarre le diaporama depuis la première diapositive. Maj+F5 démarre depuis la diapositive actuellement sélectionnée — très utile pour tester une diapositive en cours d'édition.",
+    "mosObjective": "4.1.1",
+    "lessonRef": "ppt-13"
+  },
+  {
+    "id": "ppt-q-024",
+    "appModule": "POWERPOINT",
+    "domain": "diaporama",
+    "difficulty": 2,
+    "questionText": "Comment masquer une diapositive pour qu'elle ne s'affiche pas pendant le diaporama ?",
+    "options": [
+      "Supprimer la diapositive (et la recréer si besoin)",
+      "Clic droit sur la diapositive > Masquer la diapositive",
+      "Onglet Diaporama > Masquer la diapositive",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "La diapositive masquée reste dans la présentation mais est sautée pendant le diaporama. Elle apparaît grisée avec un numéro barré dans le volet miniatures. Les deux méthodes fonctionnent.",
+    "mosObjective": "4.1.2",
+    "lessonRef": "ppt-13"
+  },
+  {
+    "id": "ppt-q-025",
+    "appModule": "POWERPOINT",
+    "domain": "notes",
+    "difficulty": 1,
+    "questionText": "Comment afficher le volet Notes pour ajouter des notes de présentateur ?",
+    "options": [
+      "Onglet Affichage > Notes",
+      "Cliquer sur 'Cliquez pour ajouter des notes' en bas de la diapositive",
+      "Onglet Affichage > Affichage Normal > volet Notes en bas",
+      "Toutes les options sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le volet Notes est visible en mode Normal en bas de l'écran. Si non visible, cliquer sur 'Notes' dans la barre d'état, ou Onglet Affichage > Afficher > Notes. Le mode Page de commentaires (Affichage > Page de commentaires) offre plus d'espace.",
+    "mosObjective": "4.2.1",
+    "lessonRef": "ppt-14"
+  },
+  {
+    "id": "ppt-q-026",
+    "appModule": "POWERPOINT",
+    "domain": "mode_presentateur",
+    "difficulty": 2,
+    "questionText": "Que permet le Mode Présentateur dans PowerPoint ?",
+    "options": [
+      "Afficher le diaporama en plein écran sur tous les moniteurs",
+      "Voir les notes, la diapositive suivante et un minuteur sur son écran pendant que le public voit le diaporama",
+      "Enregistrer une narration audio automatiquement",
+      "Partager l'écran via Internet"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le Mode Présentateur (Onglet Diaporama > Utiliser le Mode Présentateur) affiche sur l'écran du présentateur : la diapositive courante, les notes, la diapositive suivante et un minuteur. Le public voit uniquement le diaporama.",
+    "mosObjective": "4.3.1",
+    "lessonRef": "ppt-15"
+  },
+  {
+    "id": "ppt-q-027",
+    "appModule": "POWERPOINT",
+    "domain": "sections",
+    "difficulty": 2,
+    "questionText": "Comment organiser les diapositives d'une longue présentation en sections nommées ?",
+    "options": [
+      "Créer plusieurs fichiers PowerPoint séparés",
+      "Clic droit dans le volet miniatures > Ajouter une section",
+      "Onglet Accueil > Section > Ajouter une section",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Les sections permettent de grouper les diapositives. Clic droit entre deux diapositives > Ajouter une section, ou Onglet Accueil > groupe Diapositives > Section > Ajouter une section. Les sections peuvent être réduites/développées.",
+    "mosObjective": "1.4.1",
+    "lessonRef": "ppt-16"
+  },
+  {
+    "id": "ppt-q-028",
+    "appModule": "POWERPOINT",
+    "domain": "export",
+    "difficulty": 1,
+    "questionText": "Comment exporter une présentation PowerPoint en PDF ?",
+    "options": [
+      "Fichier > Enregistrer sous > PDF",
+      "Fichier > Exporter > Créer un document PDF/XPS",
+      "Onglet Insertion > Exporter PDF",
+      "Les options A et B sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Fichier > Enregistrer sous en choisissant PDF comme type, ou Fichier > Exporter > Créer PDF/XPS. L'export PDF préserve la mise en page pour l'impression et la distribution.",
+    "mosObjective": "1.5.1",
+    "lessonRef": "ppt-17"
+  },
+  {
+    "id": "ppt-q-029",
+    "appModule": "POWERPOINT",
+    "domain": "export",
+    "difficulty": 2,
+    "questionText": "Comment enregistrer chaque diapositive comme image JPEG séparée ?",
+    "options": [
+      "Faire une capture d'écran de chaque diapositive",
+      "Fichier > Exporter > Modifier le type de fichier > JPEG",
+      "Fichier > Enregistrer sous > JPEG (propose d'exporter toutes ou une diapositive)",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Fichier > Enregistrer sous > choisir JPEG comme type de fichier. PowerPoint propose d'exporter 'Toutes les diapositives' (crée un dossier avec une image par diapositive) ou 'Diapositive active uniquement'.",
+    "mosObjective": "1.5.2",
+    "lessonRef": "ppt-17"
+  },
+  {
+    "id": "ppt-q-030",
+    "appModule": "POWERPOINT",
+    "domain": "collaboration",
+    "difficulty": 2,
+    "questionText": "Comment ajouter un commentaire sur une diapositive PowerPoint ?",
+    "options": [
+      "Onglet Révision > Nouveau commentaire",
+      "Onglet Insertion > Commentaire",
+      "Clic droit sur la diapositive > Nouveau commentaire",
+      "Les options A et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Onglet Révision > groupe Commentaires > Nouveau commentaire est la méthode principale. Un clic droit sur l'objet ou la diapositive propose aussi l'ajout d'un commentaire. Les commentaires apparaissent sous forme d'icônes cliquables.",
+    "mosObjective": "5.1.1",
+    "lessonRef": "ppt-18"
+  },
+  {
+    "id": "ppt-q-031",
+    "appModule": "POWERPOINT",
+    "domain": "texte",
+    "difficulty": 1,
+    "questionText": "Comment ajouter une zone de texte libre (en dehors des espaces réservés) dans PowerPoint ?",
+    "options": [
+      "Double-clic sur la diapositive",
+      "Onglet Insertion > Zone de texte > dessiner la zone",
+      "Onglet Accueil > Insérer du texte",
+      "Option A uniquement"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Insertion > groupe Texte > Zone de texte. Après sélection, cliquer pour créer une zone qui s'agrandit avec le texte, ou cliquer-glisser pour définir une taille fixe.",
+    "mosObjective": "3.8.1",
+    "lessonRef": "ppt-19"
+  },
+  {
+    "id": "ppt-q-032",
+    "appModule": "POWERPOINT",
+    "domain": "liens",
+    "difficulty": 2,
+    "questionText": "Comment créer un bouton qui navigue vers une diapositive spécifique pendant le diaporama ?",
+    "options": [
+      "Ce n'est pas possible dans PowerPoint",
+      "Insérer une forme > clic droit > Lien hypertexte > Emplacement dans le document > choisir la diapositive",
+      "Onglet Insertion > Liens > Lien hypertexte > Emplacement dans le document",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Les liens hypertextes dans PowerPoint peuvent pointer vers une autre diapositive, une URL, un fichier ou une adresse email. Sélectionner l'objet/texte > Ctrl+K ou Onglet Insertion > Lien.",
+    "mosObjective": "3.9.1",
+    "lessonRef": "ppt-20"
+  },
+  {
+    "id": "ppt-q-033",
+    "appModule": "POWERPOINT",
+    "domain": "minutage",
+    "difficulty": 2,
+    "questionText": "Comment enregistrer le minutage des diapositives pour un diaporama automatique ?",
+    "options": [
+      "Onglet Diaporama > Enregistrer le minutage",
+      "Onglet Transitions > Avancer après : définir le délai",
+      "Les deux méthodes sont correctes et complémentaires",
+      "Ce n'est pas possible dans PowerPoint"
+    ],
+    "correctIndex": 2,
+    "explanation": "'Enregistrer le minutage' (Onglet Diaporama) lance le diaporama et enregistre le temps passé sur chaque diapositive. L'onglet Transitions > 'Avancer après' permet de définir un délai fixe. Les deux approches créent un diaporama automatique.",
+    "mosObjective": "4.4.1",
+    "lessonRef": "ppt-21"
+  },
+  {
+    "id": "ppt-q-034",
+    "appModule": "POWERPOINT",
+    "domain": "taille_diapositive",
+    "difficulty": 1,
+    "questionText": "Comment changer le format des diapositives de 16:9 (paysage) à 4:3 ou un format personnalisé ?",
+    "options": [
+      "Onglet Création > Taille des diapositives",
+      "Onglet Mise en page > Format de la diapositive",
+      "Onglet Affichage > Taille",
+      "Options A et B selon la version de PowerPoint"
+    ],
+    "correctIndex": 3,
+    "explanation": "Onglet Création > groupe Personnaliser > Taille des diapositives (PowerPoint 2013+). Dans les versions antérieures, c'est Onglet Création > Mise en page. On peut choisir des formats prédéfinis ou personnaliser en cm.",
+    "mosObjective": "1.6.1",
+    "lessonRef": "ppt-22"
+  },
+  {
+    "id": "ppt-q-035",
+    "appModule": "POWERPOINT",
+    "domain": "regrouper",
+    "difficulty": 2,
+    "questionText": "Comment regrouper plusieurs objets pour les déplacer/redimensionner comme un seul bloc ?",
+    "options": [
+      "Sélectionner tous les objets (Ctrl+clic) > Onglet Format > Grouper > Grouper",
+      "Sélectionner tous les objets > Clic droit > Grouper > Grouper",
+      "Sélectionner tous les objets > Ctrl+G",
+      "Toutes les options sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le groupement est accessible par le menu Format > Organiser > Grouper, clic droit > Grouper, ou le raccourci Ctrl+G. Ctrl+Maj+G dissocie le groupe. Le groupement facilite la gestion des objets composites.",
+    "mosObjective": "3.3.3",
+    "lessonRef": "ppt-08"
+  },
+  {
+    "id": "ppt-q-036",
+    "appModule": "POWERPOINT",
+    "domain": "zoom",
+    "difficulty": 2,
+    "questionText": "Qu'est-ce que la fonctionnalité Zoom Résumé dans PowerPoint 365 ?",
+    "options": [
+      "Un outil pour agrandir une partie d'une diapositive pendant le diaporama",
+      "Une diapositive interactive avec des vignettes cliquables vers d'autres sections",
+      "Un mode d'affichage qui réduit la présentation",
+      "Une animation de zoom sur un objet"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le Zoom Résumé (Onglet Insertion > Zoom > Zoom Résumé) crée une diapositive d'accueil interactive avec des vignettes de sections. En cliquant une vignette pendant le diaporama, on navigue vers cette section avec un effet de zoom.",
+    "mosObjective": "4.5.1",
+    "lessonRef": "ppt-23"
+  },
+  {
+    "id": "ppt-q-037",
+    "appModule": "POWERPOINT",
+    "domain": "modele",
+    "difficulty": 2,
+    "questionText": "Comment enregistrer une présentation comme modèle PowerPoint réutilisable ?",
+    "options": [
+      "Fichier > Enregistrer sous > Modèle PowerPoint (.potx)",
+      "Onglet Création > Enregistrer le thème",
+      "Copier le fichier dans le dossier Modèles",
+      "Option A uniquement"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fichier > Enregistrer sous > choisir 'Modèle PowerPoint (.potx)' comme type. PowerPoint propose automatiquement de l'enregistrer dans le dossier Modèles personnalisés pour le retrouver dans Fichier > Nouveau.",
+    "mosObjective": "1.7.1",
+    "lessonRef": "ppt-24"
+  },
+  {
+    "id": "ppt-q-038",
+    "appModule": "POWERPOINT",
+    "domain": "impression",
+    "difficulty": 1,
+    "questionText": "Comment imprimer plusieurs diapositives par page (format document) dans PowerPoint ?",
+    "options": [
+      "Ce n'est pas possible",
+      "Fichier > Imprimer > Mise en page > choisir le nombre de diapositives par page",
+      "Onglet Affichage > Document > Imprimer",
+      "Options B et C sont correctes selon la version"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fichier > Imprimer > sous 'Diapositives en mode normal', cliquer pour choisir 'Document (2 diapositives)', '(3 diapositives)', '(4, 6 ou 9 diapositives)'. Le mode 3 diapositives inclut des lignes pour les notes.",
+    "mosObjective": "1.8.1",
+    "lessonRef": "ppt-25"
+  },
+  {
+    "id": "ppt-q-039",
+    "appModule": "POWERPOINT",
+    "domain": "enregistrement_narration",
+    "difficulty": 2,
+    "questionText": "Comment enregistrer une narration audio avec le diaporama dans PowerPoint ?",
+    "options": [
+      "Onglet Insertion > Audio > Enregistrer l'audio (par diapositive)",
+      "Onglet Diaporama > Enregistrer le diaporama (avec narration et minutage)",
+      "Onglet Révision > Enregistrer la narration",
+      "Les options A et B sont correctes et complémentaires"
+    ],
+    "correctIndex": 3,
+    "explanation": "Onglet Diaporama > Enregistrer le diaporama lance un mode d'enregistrement complet (narration + minutage + annotations). Onglet Insertion > Audio > Enregistrer l'audio permet d'enregistrer un son sur une diapositive spécifique.",
+    "mosObjective": "3.7.3",
+    "lessonRef": "ppt-12"
+  },
+  {
+    "id": "ppt-q-040",
+    "appModule": "POWERPOINT",
+    "domain": "ordre_objets",
+    "difficulty": 2,
+    "questionText": "Comment amener un objet au premier plan (devant tous les autres) dans PowerPoint ?",
+    "options": [
+      "Onglet Format > Organiser > Mettre au premier plan",
+      "Clic droit sur l'objet > Mettre au premier plan",
+      "Onglet Accueil > Organiser > Mettre au premier plan",
+      "Toutes les options sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le menu Organiser est accessible depuis l'onglet Format (contextuel), le clic droit, et l'onglet Accueil > Organiser. 'Mettre au premier plan' place l'objet devant tous. 'Avancer' le déplace d'un niveau.",
+    "mosObjective": "3.3.4",
+    "lessonRef": "ppt-08"
+  },
+  {
+    "id": "ppt-q-041",
+    "appModule": "POWERPOINT",
+    "domain": "guides",
+    "difficulty": 1,
+    "questionText": "Comment afficher les grilles et repères pour aligner précisément les objets ?",
+    "options": [
+      "Onglet Affichage > Afficher > cocher Grille et Repères",
+      "Alt+F9 pour les repères, Maj+F9 pour la grille",
+      "Clic droit sur la diapositive > Grille et repères",
+      "Toutes les options sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Grille et repères sont accessibles depuis l'onglet Affichage, les raccourcis clavier, ou le clic droit. La boîte de dialogue Grille et repères (Alt+F9 puis Options) permet de définir l'espacement de la grille.",
+    "mosObjective": "3.3.5",
+    "lessonRef": "ppt-08"
+  },
+  {
+    "id": "ppt-q-042",
+    "appModule": "POWERPOINT",
+    "domain": "diapositives",
+    "difficulty": 1,
+    "questionText": "Comment dupliquer rapidement une diapositive dans PowerPoint ?",
+    "options": [
+      "Ctrl+C puis Ctrl+V",
+      "Clic droit sur la diapositive > Dupliquer la diapositive",
+      "Onglet Accueil > Nouvelle diapositive > Dupliquer les diapositives sélectionnées",
+      "Toutes les options sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Toutes ces méthodes fonctionnent. Copier-coller (Ctrl+C, Ctrl+V) est universel. Clic droit > Dupliquer ou Onglet Accueil > Nouvelle diapositive > Dupliquer sont plus directs.",
+    "mosObjective": "1.1.3",
+    "lessonRef": "ppt-01"
+  },
+  {
+    "id": "ppt-q-043",
+    "appModule": "POWERPOINT",
+    "domain": "trieuse",
+    "difficulty": 1,
+    "questionText": "Quel mode d'affichage permet de voir toutes les diapositives en miniatures pour les réorganiser facilement ?",
+    "options": [
+      "Mode Normal",
+      "Mode Trieuse de diapositives",
+      "Mode Lecture",
+      "Mode Plan"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le Mode Trieuse (Onglet Affichage > Trieuse de diapositives, ou icône dans la barre d'état) affiche toutes les diapositives en grille. On peut les réorganiser par glisser-déposer, les sélectionner en groupe, et voir les transitions.",
+    "mosObjective": "1.9.1",
+    "lessonRef": "ppt-26"
+  },
+  {
+    "id": "ppt-q-044",
+    "appModule": "POWERPOINT",
+    "domain": "couleurs_formes",
+    "difficulty": 2,
+    "questionText": "Comment appliquer un dégradé de couleur comme remplissage d'une forme dans PowerPoint ?",
+    "options": [
+      "Ce n'est possible que pour les arrière-plans",
+      "Sélectionner la forme > Format de la forme > Remplissage > Dégradé",
+      "Clic droit > Mettre en forme > Dégradé",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le volet Format de la forme (double-clic sur la forme ou clic droit > Mettre en forme la forme) > onglet Remplissage > Remplissage dégradé. On peut définir plusieurs points de dégradé, direction, angle et transparence.",
+    "mosObjective": "3.2.2",
+    "lessonRef": "ppt-07"
+  },
+  {
+    "id": "ppt-q-045",
+    "appModule": "POWERPOINT",
+    "domain": "police",
+    "difficulty": 1,
+    "questionText": "Comment remplacer une police utilisée dans toute la présentation par une autre police ?",
+    "options": [
+      "Modifier chaque zone de texte manuellement",
+      "Onglet Accueil > Remplacer > Remplacer les polices",
+      "Onglet Création > Polices > Remplacer",
+      "Ce n'est possible qu'en modifiant le masque"
+    ],
+    "correctIndex": 1,
+    "explanation": "Onglet Accueil > groupe Édition > Remplacer > Remplacer les polices. Cette fonction remplace toutes les occurrences d'une police dans toute la présentation en une seule opération.",
+    "mosObjective": "3.8.2",
+    "lessonRef": "ppt-19"
+  },
+  {
+    "id": "ppt-q-046",
+    "appModule": "POWERPOINT",
+    "domain": "format_image",
+    "difficulty": 2,
+    "questionText": "Comment appliquer un style prédéfini (ombre, reflet, cadre) à une image dans PowerPoint ?",
+    "options": [
+      "Onglet Insertion > Styles d'image",
+      "Sélectionner l'image > Onglet Format de l'image > Styles d'image > choisir un style",
+      "Clic droit > Style d'image",
+      "Option B uniquement"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'onglet contextuel Format de l'image > groupe Styles d'image contient une galerie de styles prédéfinis (cadres, ombres, perspectives, formes). Survoler un style affiche un aperçu en temps réel.",
+    "mosObjective": "3.1.4",
+    "lessonRef": "ppt-06"
+  },
+  {
+    "id": "ppt-q-047",
+    "appModule": "POWERPOINT",
+    "domain": "plan",
+    "difficulty": 2,
+    "questionText": "Comment importer un plan Word pour créer automatiquement des diapositives PowerPoint ?",
+    "options": [
+      "Copier-coller le texte depuis Word",
+      "Onglet Accueil > Nouvelle diapositive > Plan à partir du plan",
+      "Onglet Insertion > Diapositives depuis un plan",
+      "Les options B et C sont équivalentes selon la version"
+    ],
+    "correctIndex": 3,
+    "explanation": "PowerPoint peut créer des diapositives automatiquement depuis un document Word structuré avec des styles Titre. Onglet Accueil > Nouvelle diapositive > Plan à partir du plan (ou Insertion > Diapositives depuis le plan).",
+    "mosObjective": "1.10.1",
+    "lessonRef": "ppt-27"
+  },
+  {
+    "id": "ppt-q-048",
+    "appModule": "POWERPOINT",
+    "domain": "accessibilite",
+    "difficulty": 2,
+    "questionText": "Comment ajouter un texte alternatif à une image dans PowerPoint pour l'accessibilité ?",
+    "options": [
+      "Ajouter une légende sous l'image",
+      "Clic droit sur l'image > Modifier le texte de remplacement",
+      "Onglet Format de l'image > Texte de remplacement",
+      "Les options B et C sont correctes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le texte alternatif (alt text) est lu par les lecteurs d'écran pour les personnes malvoyantes. Clic droit > Modifier le texte de remplacement ou Onglet Format > Accessibilité > Texte de remplacement.",
+    "mosObjective": "5.2.1",
+    "lessonRef": "ppt-28"
+  },
+  {
+    "id": "ppt-q-049",
+    "appModule": "POWERPOINT",
+    "domain": "protection",
+    "difficulty": 2,
+    "questionText": "Comment protéger une présentation pour qu'elle ne puisse être ouverte qu'avec un mot de passe ?",
+    "options": [
+      "Onglet Révision > Protéger la présentation",
+      "Fichier > Informations > Protéger la présentation > Chiffrer avec mot de passe",
+      "Onglet Création > Protection > Mot de passe",
+      "Option A uniquement"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fichier > Informations > Protéger la présentation > Chiffrer avec un mot de passe chiffre le fichier .pptx. L'option 'Toujours ouvrir en lecture seule' ou 'Marquer comme final' sont d'autres niveaux de protection disponibles.",
+    "mosObjective": "5.3.1",
+    "lessonRef": "ppt-29"
+  },
+  {
+    "id": "ppt-q-050",
+    "appModule": "POWERPOINT",
+    "domain": "video_export",
+    "difficulty": 3,
+    "questionText": "Comment exporter une présentation PowerPoint sous forme de vidéo MP4 ?",
+    "options": [
+      "Fichier > Enregistrer sous > MP4",
+      "Fichier > Exporter > Créer une vidéo > choisir la qualité > Créer la vidéo",
+      "Onglet Diaporama > Exporter en vidéo",
+      "Option B uniquement"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fichier > Exporter > Créer une vidéo. On choisit la résolution (HD 1080p, HD 720p, SD, etc.), si les minutages et narrations sont inclus, puis cliquer 'Créer la vidéo'. Le rendu peut prendre plusieurs minutes.",
+    "mosObjective": "1.5.3",
+    "lessonRef": "ppt-17"
+  }
+]
