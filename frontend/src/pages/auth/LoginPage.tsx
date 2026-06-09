@@ -30,8 +30,15 @@ export default function LoginPage() {
 
       {/* Glassmorphism Panel */}
       <div className="w-full max-w-md bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl shadow-2xl z-10">
-        <h1 className="text-3xl font-bold text-white mb-2">Hello!</h1>
-        <p className="text-slate-400 mb-8">Welcome Back</p>
+        <div className="flex justify-between items-center mb-8">
+          <Link to="/" className="text-slate-400 hover:text-white transition text-sm flex items-center">
+            ← Home
+          </Link>
+          <div className="text-right">
+            <h1 className="text-3xl font-bold text-white mb-2">Hello!</h1>
+            <p className="text-slate-400">Welcome Back</p>
+          </div>
+        </div>
 
         <form
           className="space-y-6"
