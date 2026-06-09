@@ -44,6 +44,8 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 WORKDIR /var/www/html
 
 COPY backend/ .
+COPY content/ /var/www/html/content/
+COPY "fichier a utilise/" /var/www/html/fichier_a_utilise/
 
 # Create a temporary .env so Laravel scripts (package:discover, etc.) can run
 RUN if [ ! -f .env ]; then cp .env.example .env 2>/dev/null || true; fi
