@@ -50,7 +50,7 @@ primary_region = 'ams'
   processes = ['app']
 
 [deploy]
-  release_command = "php artisan migrate --force && php artisan db:seed --force"
+  release_command = "php artisan migrate --force"
 
 [[vm]]
   cpu_kind = 'shared'
