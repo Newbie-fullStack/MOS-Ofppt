@@ -10,34 +10,26 @@ class QuestionSeeder extends Seeder
 {
     public function run(): void
     {
-        $sources = [
-            // Priorite au dossier "fichier a utilise", puis fallback vers /content
-            ['module' => 'WORD', 'path' => base_path('../fichier a utilise/word_quizzes.json'), 'fallback' => base_path('../content/word/quizzes.json')],
-            ['module' => 'EXCEL', 'path' => base_path('../fichier a utilise/excel_quizzes.json'), 'fallback' => base_path('../content/excel/quizzes.json')],
-            ['module' => 'POWERPOINT', 'path' => base_path('../fichier a utilise/powerpoint_quizzes.json'), 'fallback' => base_path('../content/powerpoint/quizzes.json')],
+        $questions = [
+            ['id' => 'q1', 'module' => 'WORD', 'text' => 'Quel raccourci permet d\'appliquer le style Titre 1 ?', 'options' => ['Ctrl+Alt+1', 'Ctrl+1', 'Alt+1'], 'answer' => 'Ctrl+Alt+1'],
+            ['id' => 'q2', 'module' => 'EXCEL', 'text' => 'Quelle fonction permet de calculer la somme ?', 'options' => ['=SOMME()', '=TOTAL()', '=PLUS()'], 'answer' => '=SOMME()'],
+            ['id' => 'q3', 'module' => 'POWERPOINT', 'text' => 'Quel raccourci pour lancer le diaporama ?', 'options' => ['F5', 'F1', 'F12'], 'answer' => 'F5'],
         ];
 
-        foreach ($sources as $source) {
-            $path = file_exists($source['path']) ? $source['path'] : $source['fallback'];
-            if (! file_exists($path)) {
-                continue;
-            }
-
-            $questions = json_decode((string) file_get_contents($path), true);
-            if (! is_array($questions)) {
-                continue;
-            }
-
-            foreach ($questions as $q) {
-                $id = (string) ($q['id'] ?? '');
-                if ($id === '') {
-                    continue;
-                }
-
-                Question::updateOrCreate(
-                    ['id' => $id],
-                    [
-                        'app_module' => $source['module'],
+        foreach ($questions as $q) {
+            \App\Models\Question::updateOrCreate(
+                ['id' => $q['id']],
+                [
+                    'app_module' => $q['module'],
+                    'question_text' => $q['text'],
+                    'options' => $q['options'],
+                    'answer' => $q['answer'],
+                    'difficulty' => 'BEGINNER',
+                ]
+            );
+        }
+    }
+}
                         'domain' => (string) ($q['domain'] ?? 'general'),
                         'difficulty' => $this->mapDifficulty((int) ($q['difficulty'] ?? 1)),
                         'question_text' => (string) ($q['questionText'] ?? ''),
