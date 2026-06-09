@@ -18,23 +18,23 @@ export default function LoginPage() {
   const setAuth = useAuthStore((s) => s.setAuth)
   const [error, setError] = useState<string | null>(null)
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm<FormValues>({
+  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<FormValues>({
     resolver: zodResolver(schema),
     defaultValues: { email: 'apprenant@mos-ofppt.ma', password: 'Test1234!' },
   })
 
   return (
-    <div className="min-h-full flex items-center justify-center p-6">
-      <div className="w-full max-w-md rounded-xl bg-white shadow p-6">
-        <h1 className="text-xl font-semibold">Connexion</h1>
-        <p className="text-sm text-slate-600 mt-1">Accède à la plateforme MOS OFPPT.</p>
+    <div className="min-h-screen flex items-center justify-center bg-slate-950 p-6 relative overflow-hidden">
+      {/* Abstract Background Decoration */}
+      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-900/20 via-slate-950 to-slate-950" />
+
+      {/* Glassmorphism Panel */}
+      <div className="w-full max-w-md bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl shadow-2xl z-10">
+        <h1 className="text-3xl font-bold text-white mb-2">Hello!</h1>
+        <p className="text-slate-400 mb-8">Welcome Back</p>
 
         <form
-          className="mt-6 space-y-3"
+          className="space-y-6"
           onSubmit={handleSubmit(async (values) => {
             setError(null)
             try {
@@ -46,40 +46,34 @@ export default function LoginPage() {
             }
           })}
         >
-          <label className="block">
-            <span className="text-sm font-medium">Email</span>
-            <input
-              className="mt-1 w-full rounded-md border border-slate-200 px-3 py-2"
-              type="email"
-              {...register('email')}
-            />
-            {errors.email && <div className="text-xs text-red-600 mt-1">{errors.email.message}</div>}
-          </label>
+          <input
+            className="w-full bg-white/5 border-b border-white/20 px-0 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:border-white transition"
+            placeholder="Enter Email"
+            {...register('email')}
+          />
+          {errors.email && <div className="text-xs text-red-400">{errors.email.message}</div>}
 
-          <label className="block">
-            <span className="text-sm font-medium">Mot de passe</span>
-            <input
-              className="mt-1 w-full rounded-md border border-slate-200 px-3 py-2"
-              type="password"
-              {...register('password')}
-            />
-            {errors.password && <div className="text-xs text-red-600 mt-1">{errors.password.message}</div>}
-          </label>
+          <input
+            className="w-full bg-white/5 border-b border-white/20 px-0 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:border-white transition"
+            type="password"
+            placeholder="Password"
+            {...register('password')}
+          />
+          {errors.password && <div className="text-xs text-red-400">{errors.password.message}</div>}
 
-          {error && <div className="text-sm text-red-600">{error}</div>}
+          <div className="text-right text-sm">
+            <Link className="text-slate-400 hover:text-white" to="/forgot-password">Forgot Password?</Link>
+          </div>
 
-          <button disabled={isSubmitting} className="w-full rounded-md bg-slate-900 text-white py-2 font-medium disabled:opacity-60">
-            Se connecter
+          {error && <div className="text-sm text-red-400">{error}</div>}
+
+          <button disabled={isSubmitting} className="w-full bg-white text-slate-950 py-3 rounded-lg font-semibold hover:bg-slate-200 transition">
+            Sign In
           </button>
         </form>
 
-        <div className="mt-4 flex items-center justify-between text-sm text-slate-600">
-          <Link className="text-slate-900 underline" to="/forgot-password">
-            Mot de passe oublié ?
-          </Link>
-          <Link className="text-slate-900 underline" to="/register">
-            Créer un compte
-          </Link>
+        <div className="mt-8 text-center text-sm text-slate-400">
+          Don't have an account? <Link className="text-white font-semibold underline" to="/register">Create Account!</Link>
         </div>
       </div>
     </div>
